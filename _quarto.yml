@@ -1,0 +1,35 @@
+project:
+  type: book
+  output-dir: docs
+
+
+book:
+  title: "units"
+  author: "Yair Mau"
+  repo-url: https://github.com/yairmau/units/
+  favicon: archive/logo.png
+
+  chapters:
+    - index.qmd
+    - intro.qmd
+
+  sidebar:
+    collapse-level: 2
+    tools:
+      - icon: house-fill
+        href: https://yairmau.com/
+    logo: archive/logo.png
+  search: true
+
+# bibliography: references.bib
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+  pdf:
+    documentclass: scrreprt
+
+
+

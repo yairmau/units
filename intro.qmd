@@ -1,0 +1,51 @@
+# introduction
+
+## dimensions
+
+Dimensions are physical quantities that describe the nature of a measurement, such as length, time, or mass. Units, on the other hand, are standardized quantities used to express the value of a dimension. For example, "meter", "inch" and "parsec" are units for the dimension of length.
+
+The three fundamental dimensions in mechanics are **length**, **time**, and **mass**. In addition to these, other important dimensions include **temperature**, **electric current**, and **amount of substance**. Each physical quantity can be described in terms of these basic dimensions.
+
+Commonly used dimensions in science and engineering:
+
+| Dimension         | Symbol | Description                  | SI Unit          |
+|-------------------|--------|------------------------------|------------------|
+| Length            | L      | distance or size             | meter (m)        |
+| Time              | T      | duration or interval         | second (s)       |
+| Mass              | M      | amount of matter             | kilogram (kg)    |
+| Temperature       | Θ      | degree of hotness            | kelvin (K)       |
+| Electric current  | I      | flow of electric charge      | ampere (A)       |
+| Amount of substance | N    | quantity of entities         | mole (mol)       |
+| Luminous intensity | J     | brightness                   | candela (cd)     |
+
+## SI
+
+The SI (Système International d'Unités) is the modern form of the metric system and the most widely used system of measurement for science and engineering. It defines seven base units (meter, kilogram, second, ampere, kelvin, mole, and candela) from which all other units are derived. The SI provides a standardized way to express and compare physical quantities across disciplines and countries.
+
+## prefixes
+
+Prefixes are short letter combinations placed before a unit to indicate multiples or fractions of that unit. They make it easier to express very large or very small quantities. The most common prefixes are shown in bold in the table below.
+
+| Prefix  | Symbol | Power of 10    | Common Example                                  |
+|---------|--------|----------------|-------------------------------------------------|
+| yotta   | Y      | $10^{24}$      | YB, yottabyte (computing, data)                 |
+| zetta   | Z      | $10^{21}$      | ZJ, zettajoule (astronomy, energy)              |
+| exa     | E      | $10^{18}$      | EW, exawatt (energy, power)                     |
+| peta    | P      | $10^{15}$      | PB, petabyte (computing, data)**                  |
+| **tera**    | **T**      | **$10^{12}$**      | **TeV, teraelectronvolt (physics, energy)**         |
+| **giga**    | **G**      | **$10^{9}$**       | **GHz, gigahertz (electronics, frequency)**         |
+| **mega**    | **M**      | **$10^{6}$**       | **MW, megawatt (energy, power)**                    |
+| **kilo**    | **k**      | **$10^{3}$**       | **km, kilometer (geography, length)**               |
+| hecto   | h      | $10^{2}$       | hPa, hectopascal (meteorology, pressure)        |
+| deca    | da     | $10^{1}$       | dam, decameter (hydrology, length)              |
+|             |        | $10^{0}$       | m, meter (SI, length)                           |
+| **deci**    | **d**      | **$10^{-1}$**      | **dL, deciliter (chemistry, volume)**               |
+| **centi**   | **c**      | **$10^{-2}$**      | **cm, centimeter (biology, length)**                |
+| **milli**   | **m**      | **$10^{-3}$**      | **ms, millisecond (neuroscience, time)**            |
+| **micro**   | **µ**      | **$10^{-6}$**      | **µm, micrometer (microscopy, length)**             |
+| **nano**    | **n**      | **$10^{-9}$**      | **nm, nanometer (materials, length)**               |
+| pico    | p      | $10^{-12}$     | pF, picofarad (electronics, capacitance)        |
+| femto   | f      | $10^{-15}$     | fs, femtosecond (physics, time)                 |
+| atto    | a      | $10^{-18}$     | as, attosecond (quantum, time)                  |
+| zepto   | z      | $10^{-21}$     | zm, zeptometer (physics, length)                |
+| yocto   | y      | $10^{-24}$     | yg, yoctogram (chemistry, mass)                 |

@@ -1,0 +1,52 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "units",
+    "section": "",
+    "text": "Home",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  introduction",
+    "section": "",
+    "text": "1.1 dimensions\nDimensions are physical quantities that describe the nature of a measurement, such as length, time, or mass. Units, on the other hand, are standardized quantities used to express the value of a dimension. For example, “meter”, “inch” and “parsec” are units for the dimension of length.\nThe three fundamental dimensions in mechanics are length, time, and mass. In addition to these, other important dimensions include temperature, electric current, and amount of substance. Each physical quantity can be described in terms of these basic dimensions.\nCommonly used dimensions in science and engineering:",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>introduction</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#dimensions",
+    "href": "intro.html#dimensions",
+    "title": "1  introduction",
+    "section": "",
+    "text": "Dimension\nSymbol\nDescription\nSI Unit\n\n\n\n\nLength\nL\ndistance or size\nmeter (m)\n\n\nTime\nT\nduration or interval\nsecond (s)\n\n\nMass\nM\namount of matter\nkilogram (kg)\n\n\nTemperature\nΘ\ndegree of hotness\nkelvin (K)\n\n\nElectric current\nI\nflow of electric charge\nampere (A)\n\n\nAmount of substance\nN\nquantity of entities\nmole (mol)\n\n\nLuminous intensity\nJ\nbrightness\ncandela (cd)",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>introduction</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#si",
+    "href": "intro.html#si",
+    "title": "1  introduction",
+    "section": "1.2 SI",
+    "text": "1.2 SI\nThe SI (Système International d’Unités) is the modern form of the metric system and the most widely used system of measurement for science and engineering. It defines seven base units (meter, kilogram, second, ampere, kelvin, mole, and candela) from which all other units are derived. The SI provides a standardized way to express and compare physical quantities across disciplines and countries.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>introduction</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#prefixes",
+    "href": "intro.html#prefixes",
+    "title": "1  introduction",
+    "section": "1.3 prefixes",
+    "text": "1.3 prefixes\nPrefixes are short letter combinations placed before a unit to indicate multiples or fractions of that unit. They make it easier to express very large or very small quantities. The most common prefixes are shown in bold in the table below.\n\n\n\n\n\n\n\n\n\nPrefix\nSymbol\nPower of 10\nCommon Example\n\n\n\n\nyotta\nY\n\\(10^{24}\\)\nYB, yottabyte (computing, data)\n\n\nzetta\nZ\n\\(10^{21}\\)\nZJ, zettajoule (astronomy, energy)\n\n\nexa\nE\n\\(10^{18}\\)\nEW, exawatt (energy, power)\n\n\npeta\nP\n\\(10^{15}\\)\nPB, petabyte (computing, data)**\n\n\ntera\nT\n\\(10^{12}\\)\nTeV, teraelectronvolt (physics, energy)\n\n\ngiga\nG\n\\(10^{9}\\)\nGHz, gigahertz (electronics, frequency)\n\n\nmega\nM\n\\(10^{6}\\)\nMW, megawatt (energy, power)\n\n\nkilo\nk\n\\(10^{3}\\)\nkm, kilometer (geography, length)\n\n\nhecto\nh\n\\(10^{2}\\)\nhPa, hectopascal (meteorology, pressure)\n\n\ndeca\nda\n\\(10^{1}\\)\ndam, decameter (hydrology, length)\n\n\n\n\n\\(10^{0}\\)\nm, meter (SI, length)\n\n\ndeci\nd\n\\(10^{-1}\\)\ndL, deciliter (chemistry, volume)\n\n\ncenti\nc\n\\(10^{-2}\\)\ncm, centimeter (biology, length)\n\n\nmilli\nm\n\\(10^{-3}\\)\nms, millisecond (neuroscience, time)\n\n\nmicro\nµ\n\\(10^{-6}\\)\nµm, micrometer (microscopy, length)\n\n\nnano\nn\n\\(10^{-9}\\)\nnm, nanometer (materials, length)\n\n\npico\np\n\\(10^{-12}\\)\npF, picofarad (electronics, capacitance)\n\n\nfemto\nf\n\\(10^{-15}\\)\nfs, femtosecond (physics, time)\n\n\natto\na\n\\(10^{-18}\\)\nas, attosecond (quantum, time)\n\n\nzepto\nz\n\\(10^{-21}\\)\nzm, zeptometer (physics, length)\n\n\nyocto\ny\n\\(10^{-24}\\)\nyg, yoctogram (chemistry, mass)",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>introduction</span>"
+    ]
+  }
+]
