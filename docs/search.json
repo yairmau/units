@@ -44,9 +44,39 @@
     "href": "intro.html#prefixes",
     "title": "1  introduction",
     "section": "1.3 prefixes",
-    "text": "1.3 prefixes\nPrefixes are short letter combinations placed before a unit to indicate multiples or fractions of that unit. They make it easier to express very large or very small quantities. The most common prefixes are shown in bold in the table below.\n\n\n\n\n\n\n\n\n\nPrefix\nSymbol\nPower of 10\nCommon Example\n\n\n\n\nyotta\nY\n\\(10^{24}\\)\nYB, yottabyte (computing, data)\n\n\nzetta\nZ\n\\(10^{21}\\)\nZJ, zettajoule (astronomy, energy)\n\n\nexa\nE\n\\(10^{18}\\)\nEW, exawatt (energy, power)\n\n\npeta\nP\n\\(10^{15}\\)\nPB, petabyte (computing, data)**\n\n\ntera\nT\n\\(10^{12}\\)\nTeV, teraelectronvolt (physics, energy)\n\n\ngiga\nG\n\\(10^{9}\\)\nGHz, gigahertz (electronics, frequency)\n\n\nmega\nM\n\\(10^{6}\\)\nMW, megawatt (energy, power)\n\n\nkilo\nk\n\\(10^{3}\\)\nkm, kilometer (geography, length)\n\n\nhecto\nh\n\\(10^{2}\\)\nhPa, hectopascal (meteorology, pressure)\n\n\ndeca\nda\n\\(10^{1}\\)\ndam, decameter (hydrology, length)\n\n\n\n\n\\(10^{0}\\)\nm, meter (SI, length)\n\n\ndeci\nd\n\\(10^{-1}\\)\ndL, deciliter (chemistry, volume)\n\n\ncenti\nc\n\\(10^{-2}\\)\ncm, centimeter (biology, length)\n\n\nmilli\nm\n\\(10^{-3}\\)\nms, millisecond (neuroscience, time)\n\n\nmicro\nµ\n\\(10^{-6}\\)\nµm, micrometer (microscopy, length)\n\n\nnano\nn\n\\(10^{-9}\\)\nnm, nanometer (materials, length)\n\n\npico\np\n\\(10^{-12}\\)\npF, picofarad (electronics, capacitance)\n\n\nfemto\nf\n\\(10^{-15}\\)\nfs, femtosecond (physics, time)\n\n\natto\na\n\\(10^{-18}\\)\nas, attosecond (quantum, time)\n\n\nzepto\nz\n\\(10^{-21}\\)\nzm, zeptometer (physics, length)\n\n\nyocto\ny\n\\(10^{-24}\\)\nyg, yoctogram (chemistry, mass)",
+    "text": "1.3 prefixes\nPrefixes are short letter combinations placed before a unit to indicate multiples or fractions of that unit. They make it easier to express very large or very small quantities. The most common prefixes are shown in bold in the table below.\n\n\n\n\n\n\n\n\n\nPrefix\nSymbol\nPower of 10\nCommon Example\n\n\n\n\nyotta\nY\n10^{24}\nYB, yottabyte (computing, data)\n\n\nzetta\nZ\n10^{21}\nZJ, zettajoule (astronomy, energy)\n\n\nexa\nE\n10^{18}\nEW, exawatt (energy, power)\n\n\npeta\nP\n10^{15}\nPB, petabyte (computing, data)**\n\n\ntera\nT\n10^{12}\nTeV, teraelectronvolt (physics, energy)\n\n\ngiga\nG\n10^{9}\nGHz, gigahertz (electronics, frequency)\n\n\nmega\nM\n10^{6}\nMW, megawatt (energy, power)\n\n\nkilo\nk\n10^{3}\nkm, kilometer (geography, length)\n\n\nhecto\nh\n10^{2}\nhPa, hectopascal (meteorology, pressure)\n\n\ndeca\nda\n10^{1}\ndam, decameter (hydrology, length)\n\n\n\n\n10^{0}\nm, meter (SI, length)\n\n\ndeci\nd\n10^{-1}\ndL, deciliter (chemistry, volume)\n\n\ncenti\nc\n10^{-2}\ncm, centimeter (biology, length)\n\n\nmilli\nm\n10^{-3}\nms, millisecond (neuroscience, time)\n\n\nmicro\nµ\n10^{-6}\nµm, micrometer (microscopy, length)\n\n\nnano\nn\n10^{-9}\nnm, nanometer (materials, length)\n\n\npico\np\n10^{-12}\npF, picofarad (electronics, capacitance)\n\n\nfemto\nf\n10^{-15}\nfs, femtosecond (physics, time)\n\n\natto\na\n10^{-18}\nas, attosecond (quantum, time)\n\n\nzepto\nz\n10^{-21}\nzm, zeptometer (physics, length)\n\n\nyocto\ny\n10^{-24}\nyg, yoctogram (chemistry, mass)",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>introduction</span>"
+    ]
+  },
+  {
+    "objectID": "basic-concepts.html",
+    "href": "basic-concepts.html",
+    "title": "2  basic concepts",
+    "section": "",
+    "text": "2.1 area and volume\nAreas have the dimension of length^2, and volumes have the dimension of length^3.\nAttention!\nWhen converting units of area or volume, don’t forget to square or cube the prefixes. Huh?\nLet me give an example.\n1\\, \\mathrm{km}^2 = 1 \\left( 10^3 \\mathrm{m} \\right)^2 = 1 \\left( 10^3 \\right)^2 \\left(\\mathrm{m} \\right)^2 = 10^6\\, \\mathrm{m}^2\nThere are a million square meters in a square kilometers.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>basic concepts</span>"
+    ]
+  },
+  {
+    "objectID": "basic-concepts.html#area-and-volume",
+    "href": "basic-concepts.html#area-and-volume",
+    "title": "2  basic concepts",
+    "section": "",
+    "text": "how many square meters are in a square kilometer?\n\n\n\n\nliter\nOne liter is the volume of a cube of side 10 cm.\n\nHow many liters are in a cubic meter?\n\n\n1\\, \\mathrm{m}^3 = (100\\, \\mathrm{cm})^3 = \\left(10 \\cdot 10\\, \\mathrm{cm}\\right)^3 = 10^3\\left(10\\, \\mathrm{cm}\\right)^3 = 10^3\\, \\mathrm{L}\n\nThere are a thousand liters in a cubic meter.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>basic concepts</span>"
+    ]
+  },
+  {
+    "objectID": "basic-concepts.html#concentrations-and-densities",
+    "href": "basic-concepts.html#concentrations-and-densities",
+    "title": "2  basic concepts",
+    "section": "2.2 concentrations and densities",
+    "text": "2.2 concentrations and densities\nConcentrations and densities basically answer the question:\n\nhow much of something is there in a given volume?\n\nLet’s unpack that.\n\nconcentration\nConcentrations are very commonly used in chemistry. The quantities can be moles, grams, milligrams, etc. The volumes can be liters, milliliters, etc. A few examples:\n\nconcentration of a given medical compound: 2 \\mug/mL\nconcentration of a reagent: 0.5 mol/L\n\n\n\ndensity\nThere are several flavors of densities, but usually we mean mass density:\n\nhow much mass is there in a given volume?\n\nFor instance, the density of iron is 7.87 g/cm^3\n\nwhat is the density of iron in kg/m^3?\n\n\\begin{align}\n&7.87\\, &&\\mathrm{g}&&\\mathrm{cm}^{-3} \\\\\n&7.87\\, &&\\left(10^{-3}10^3\\,\\mathrm{g}\\right) &&(10^{-2}\\,\\mathrm{m})^{-3}\\\\\n&7.87\\, &&\\left(10^{-3}\\,\\mathrm{kg}\\right) &&(10^{-2})^{-3}\\, (\\mathrm{m})^{-3}\\\\\n&7.87\\, &&10^{-3}\\, \\mathrm{kg} &&10^{6}\\, \\mathrm{m}^{-3}\\\\\n&7.87\\cdot10^{-3}10^{6} &&\\mathrm{kg} &&\\mathrm{m}^{-3}\\\\\n&7.87\\cdot10^{3} &&\\mathrm{kg} &&\\mathrm{m}^{-3}\\\\\n\\end{align}\nThere are 7870 kg of iron in a cubic meter.\nMake sure you are comfortable with what’s going on in each of the equations above.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>basic concepts</span>"
     ]
   }
 ]

@@ -1,0 +1,67 @@
+# basic concepts
+
+## area and volume
+
+Areas have the dimension of length$^2$, and volumes have the dimension of length$^3$.
+
+**Attention!**  
+When converting units of area or volume, don't forget to square or cube the prefixes. Huh?  
+Let me give an example.
+
+> how many square meters are in a square kilometer?
+
+$$
+1\, \mathrm{km}^2 = 1 \left( 10^3 \mathrm{m} \right)^2 = 1 \left( 10^3 \right)^2 \left(\mathrm{m} \right)^2 = 10^6\, \mathrm{m}^2
+$$
+
+There are a million square meters in a square kilometers.
+
+### liter {.unnumbered}
+
+One liter is the volume of a cube of side 10 cm.
+
+> How many liters are in a cubic meter?
+
+$$
+1\, \mathrm{m}^3 = (100\, \mathrm{cm})^3 = \left(10 \cdot 10\, \mathrm{cm}\right)^3 = 10^3\left(10\, \mathrm{cm}\right)^3 = 10^3\, \mathrm{L}
+$$
+
+There are a thousand liters in a cubic meter.
+
+## concentrations and densities
+
+Concentrations and densities basically answer the question:
+
+> how much of something is there in a given volume?
+
+Let's unpack that.
+
+### concentration {.unnumbered}
+
+Concentrations are very commonly used in chemistry. The quantities can be moles, grams, milligrams, etc. The volumes can be liters, milliliters, etc. A few examples:
+
+* concentration of a given medical compound: 2 $\mu$g/mL
+* concentration of a reagent: 0.5 mol/L
+
+### density {.unnumbered}
+
+There are several flavors of densities, but usually we mean mass density:
+
+> how much mass is there in a given volume?
+
+For instance, the density of iron is 7.87 g/cm$^3$
+
+> what is the density of iron in kg/m$^3$?
+
+\begin{align}
+&7.87\, &&\mathrm{g}&&\mathrm{cm}^{-3} \\
+&7.87\, &&\left(10^{-3}10^3\,\mathrm{g}\right) &&(10^{-2}\,\mathrm{m})^{-3}\\
+&7.87\, &&\left(10^{-3}\,\mathrm{kg}\right) &&(10^{-2})^{-3}\, (\mathrm{m})^{-3}\\
+&7.87\, &&10^{-3}\, \mathrm{kg} &&10^{6}\, \mathrm{m}^{-3}\\
+&7.87\cdot10^{-3}10^{6} &&\mathrm{kg} &&\mathrm{m}^{-3}\\
+&7.87\cdot10^{3} &&\mathrm{kg} &&\mathrm{m}^{-3}\\
+\end{align}
+
+There are 7870 kg of iron in a cubic meter.
+
+Make sure you are comfortable with what's going on in each of the equations above.

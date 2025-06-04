@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>1&nbsp; introduction – units</title>
+<title>2&nbsp; basic concepts – units</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./basic-concepts.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./intro.html" rel="prev">
 <link href="./archive/logo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -127,7 +126,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">introduction</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./basic-concepts.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">basic concepts</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -167,13 +166,13 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link active">
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">introduction</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basic-concepts.html" class="sidebar-item-text sidebar-link">
+  <a href="./basic-concepts.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">basic concepts</span></span></a>
   </div>
 </li>
@@ -187,9 +186,15 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#dimensions" id="toc-dimensions" class="nav-link active" data-scroll-target="#dimensions"><span class="header-section-number">1.1</span> dimensions</a></li>
-  <li><a href="#si" id="toc-si" class="nav-link" data-scroll-target="#si"><span class="header-section-number">1.2</span> SI</a></li>
-  <li><a href="#prefixes" id="toc-prefixes" class="nav-link" data-scroll-target="#prefixes"><span class="header-section-number">1.3</span> prefixes</a></li>
+  <li><a href="#area-and-volume" id="toc-area-and-volume" class="nav-link active" data-scroll-target="#area-and-volume"><span class="header-section-number">2.1</span> area and volume</a>
+  <ul class="collapse">
+  <li><a href="#liter" id="toc-liter" class="nav-link" data-scroll-target="#liter">liter</a></li>
+  </ul></li>
+  <li><a href="#concentrations-and-densities" id="toc-concentrations-and-densities" class="nav-link" data-scroll-target="#concentrations-and-densities"><span class="header-section-number">2.2</span> concentrations and densities</a>
+  <ul class="collapse">
+  <li><a href="#concentration" id="toc-concentration" class="nav-link" data-scroll-target="#concentration">concentration</a></li>
+  <li><a href="#density" id="toc-density" class="nav-link" data-scroll-target="#density">density</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -198,7 +203,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">introduction</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source" data-quarto-source-url="https://github.com/yairmau/units/blob/main/intro.qmd"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">basic concepts</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source" data-quarto-source-url="https://github.com/yairmau/units/blob/main/basic-concepts.qmd"><i class="bi"></i> Code</button></div></div>
 </div>
 
 
@@ -215,225 +220,69 @@ window.Quarto = {
 </header>
 
 
-<section id="dimensions" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="dimensions"><span class="header-section-number">1.1</span> dimensions</h2>
-<p>Dimensions are physical quantities that describe the nature of a measurement, such as length, time, or mass. Units, on the other hand, are standardized quantities used to express the value of a dimension. For example, “meter”, “inch” and “parsec” are units for the dimension of length.</p>
-<p>The three fundamental dimensions in mechanics are <strong>length</strong>, <strong>time</strong>, and <strong>mass</strong>. In addition to these, other important dimensions include <strong>temperature</strong>, <strong>electric current</strong>, and <strong>amount of substance</strong>. Each physical quantity can be described in terms of these basic dimensions.</p>
-<p>Commonly used dimensions in science and engineering:</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 25%">
-<col style="width: 10%">
-<col style="width: 40%">
-<col style="width: 24%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Dimension</th>
-<th>Symbol</th>
-<th>Description</th>
-<th>SI Unit</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Length</td>
-<td>L</td>
-<td>distance or size</td>
-<td>meter (m)</td>
-</tr>
-<tr class="even">
-<td>Time</td>
-<td>T</td>
-<td>duration or interval</td>
-<td>second (s)</td>
-</tr>
-<tr class="odd">
-<td>Mass</td>
-<td>M</td>
-<td>amount of matter</td>
-<td>kilogram (kg)</td>
-</tr>
-<tr class="even">
-<td>Temperature</td>
-<td>Θ</td>
-<td>degree of hotness</td>
-<td>kelvin (K)</td>
-</tr>
-<tr class="odd">
-<td>Electric current</td>
-<td>I</td>
-<td>flow of electric charge</td>
-<td>ampere (A)</td>
-</tr>
-<tr class="even">
-<td>Amount of substance</td>
-<td>N</td>
-<td>quantity of entities</td>
-<td>mole (mol)</td>
-</tr>
-<tr class="odd">
-<td>Luminous intensity</td>
-<td>J</td>
-<td>brightness</td>
-<td>candela (cd)</td>
-</tr>
-</tbody>
-</table>
+<section id="area-and-volume" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="area-and-volume"><span class="header-section-number">2.1</span> area and volume</h2>
+<p>Areas have the dimension of length<span class="math inline">^2</span>, and volumes have the dimension of length<span class="math inline">^3</span>.</p>
+<p><strong>Attention!</strong><br>
+When converting units of area or volume, don’t forget to square or cube the prefixes. Huh?<br>
+Let me give an example.</p>
+<blockquote class="blockquote">
+<p>how many square meters are in a square kilometer?</p>
+</blockquote>
+<p><span class="math display">
+1\, \mathrm{km}^2 = 1 \left( 10^3 \mathrm{m} \right)^2 = 1 \left( 10^3 \right)^2 \left(\mathrm{m} \right)^2 = 10^6\, \mathrm{m}^2
+</span></p>
+<p>There are a million square meters in a square kilometers.</p>
+<section id="liter" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="liter">liter</h3>
+<p>One liter is the volume of a cube of side 10 cm.</p>
+<blockquote class="blockquote">
+<p>How many liters are in a cubic meter?</p>
+</blockquote>
+<p><span class="math display">
+1\, \mathrm{m}^3 = (100\, \mathrm{cm})^3 = \left(10 \cdot 10\, \mathrm{cm}\right)^3 = 10^3\left(10\, \mathrm{cm}\right)^3 = 10^3\, \mathrm{L}
+</span></p>
+<p>There are a thousand liters in a cubic meter.</p>
 </section>
-<section id="si" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="si"><span class="header-section-number">1.2</span> SI</h2>
-<p>The SI (Système International d’Unités) is the modern form of the metric system and the most widely used system of measurement for science and engineering. It defines seven base units (meter, kilogram, second, ampere, kelvin, mole, and candela) from which all other units are derived. The SI provides a standardized way to express and compare physical quantities across disciplines and countries.</p>
 </section>
-<section id="prefixes" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="prefixes"><span class="header-section-number">1.3</span> prefixes</h2>
-<p>Prefixes are short letter combinations placed before a unit to indicate multiples or fractions of that unit. They make it easier to express very large or very small quantities. The most common prefixes are shown in bold in the table below.</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 10%">
-<col style="width: 9%">
-<col style="width: 19%">
-<col style="width: 59%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Prefix</th>
-<th>Symbol</th>
-<th>Power of 10</th>
-<th>Common Example</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>yotta</td>
-<td>Y</td>
-<td><span class="math inline">10^{24}</span></td>
-<td>YB, yottabyte (computing, data)</td>
-</tr>
-<tr class="even">
-<td>zetta</td>
-<td>Z</td>
-<td><span class="math inline">10^{21}</span></td>
-<td>ZJ, zettajoule (astronomy, energy)</td>
-</tr>
-<tr class="odd">
-<td>exa</td>
-<td>E</td>
-<td><span class="math inline">10^{18}</span></td>
-<td>EW, exawatt (energy, power)</td>
-</tr>
-<tr class="even">
-<td>peta</td>
-<td>P</td>
-<td><span class="math inline">10^{15}</span></td>
-<td>PB, petabyte (computing, data)**</td>
-</tr>
-<tr class="odd">
-<td><strong>tera</strong></td>
-<td><strong>T</strong></td>
-<td><strong><span class="math inline">10^{12}</span></strong></td>
-<td><strong>TeV, teraelectronvolt (physics, energy)</strong></td>
-</tr>
-<tr class="even">
-<td><strong>giga</strong></td>
-<td><strong>G</strong></td>
-<td><strong><span class="math inline">10^{9}</span></strong></td>
-<td><strong>GHz, gigahertz (electronics, frequency)</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>mega</strong></td>
-<td><strong>M</strong></td>
-<td><strong><span class="math inline">10^{6}</span></strong></td>
-<td><strong>MW, megawatt (energy, power)</strong></td>
-</tr>
-<tr class="even">
-<td><strong>kilo</strong></td>
-<td><strong>k</strong></td>
-<td><strong><span class="math inline">10^{3}</span></strong></td>
-<td><strong>km, kilometer (geography, length)</strong></td>
-</tr>
-<tr class="odd">
-<td>hecto</td>
-<td>h</td>
-<td><span class="math inline">10^{2}</span></td>
-<td>hPa, hectopascal (meteorology, pressure)</td>
-</tr>
-<tr class="even">
-<td>deca</td>
-<td>da</td>
-<td><span class="math inline">10^{1}</span></td>
-<td>dam, decameter (hydrology, length)</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td><span class="math inline">10^{0}</span></td>
-<td>m, meter (SI, length)</td>
-</tr>
-<tr class="even">
-<td><strong>deci</strong></td>
-<td><strong>d</strong></td>
-<td><strong><span class="math inline">10^{-1}</span></strong></td>
-<td><strong>dL, deciliter (chemistry, volume)</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>centi</strong></td>
-<td><strong>c</strong></td>
-<td><strong><span class="math inline">10^{-2}</span></strong></td>
-<td><strong>cm, centimeter (biology, length)</strong></td>
-</tr>
-<tr class="even">
-<td><strong>milli</strong></td>
-<td><strong>m</strong></td>
-<td><strong><span class="math inline">10^{-3}</span></strong></td>
-<td><strong>ms, millisecond (neuroscience, time)</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>micro</strong></td>
-<td><strong>µ</strong></td>
-<td><strong><span class="math inline">10^{-6}</span></strong></td>
-<td><strong>µm, micrometer (microscopy, length)</strong></td>
-</tr>
-<tr class="even">
-<td><strong>nano</strong></td>
-<td><strong>n</strong></td>
-<td><strong><span class="math inline">10^{-9}</span></strong></td>
-<td><strong>nm, nanometer (materials, length)</strong></td>
-</tr>
-<tr class="odd">
-<td>pico</td>
-<td>p</td>
-<td><span class="math inline">10^{-12}</span></td>
-<td>pF, picofarad (electronics, capacitance)</td>
-</tr>
-<tr class="even">
-<td>femto</td>
-<td>f</td>
-<td><span class="math inline">10^{-15}</span></td>
-<td>fs, femtosecond (physics, time)</td>
-</tr>
-<tr class="odd">
-<td>atto</td>
-<td>a</td>
-<td><span class="math inline">10^{-18}</span></td>
-<td>as, attosecond (quantum, time)</td>
-</tr>
-<tr class="even">
-<td>zepto</td>
-<td>z</td>
-<td><span class="math inline">10^{-21}</span></td>
-<td>zm, zeptometer (physics, length)</td>
-</tr>
-<tr class="odd">
-<td>yocto</td>
-<td>y</td>
-<td><span class="math inline">10^{-24}</span></td>
-<td>yg, yoctogram (chemistry, mass)</td>
-</tr>
-</tbody>
-</table>
+<section id="concentrations-and-densities" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="concentrations-and-densities"><span class="header-section-number">2.2</span> concentrations and densities</h2>
+<p>Concentrations and densities basically answer the question:</p>
+<blockquote class="blockquote">
+<p>how much of something is there in a given volume?</p>
+</blockquote>
+<p>Let’s unpack that.</p>
+<section id="concentration" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="concentration">concentration</h3>
+<p>Concentrations are very commonly used in chemistry. The quantities can be moles, grams, milligrams, etc. The volumes can be liters, milliliters, etc. A few examples:</p>
+<ul>
+<li>concentration of a given medical compound: 2 <span class="math inline">\mu</span>g/mL</li>
+<li>concentration of a reagent: 0.5 mol/L</li>
+</ul>
+</section>
+<section id="density" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="density">density</h3>
+<p>There are several flavors of densities, but usually we mean mass density:</p>
+<blockquote class="blockquote">
+<p>how much mass is there in a given volume?</p>
+</blockquote>
+<p>For instance, the density of iron is 7.87 g/cm<span class="math inline">^3</span></p>
+<blockquote class="blockquote">
+<p>what is the density of iron in kg/m<span class="math inline">^3</span>?</p>
+</blockquote>
+<p><span class="math display">\begin{align}
+&amp;7.87\, &amp;&amp;\mathrm{g}&amp;&amp;\mathrm{cm}^{-3} \\
+&amp;7.87\, &amp;&amp;\left(10^{-3}10^3\,\mathrm{g}\right) &amp;&amp;(10^{-2}\,\mathrm{m})^{-3}\\
+&amp;7.87\, &amp;&amp;\left(10^{-3}\,\mathrm{kg}\right) &amp;&amp;(10^{-2})^{-3}\, (\mathrm{m})^{-3}\\
+&amp;7.87\, &amp;&amp;10^{-3}\, \mathrm{kg} &amp;&amp;10^{6}\, \mathrm{m}^{-3}\\
+&amp;7.87\cdot10^{-3}10^{6} &amp;&amp;\mathrm{kg} &amp;&amp;\mathrm{m}^{-3}\\
+&amp;7.87\cdot10^{3} &amp;&amp;\mathrm{kg} &amp;&amp;\mathrm{m}^{-3}\\
+\end{align}</span></p>
+<p>There are 7870 kg of iron in a cubic meter.</p>
+<p>Make sure you are comfortable with what’s going on in each of the equations above.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -889,14 +738,11 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Home">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Home</span>
+      <a href="./intro.html" class="pagination-link" aria-label="introduction">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">introduction</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./basic-concepts.html" class="pagination-link" aria-label="basic concepts">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">basic concepts</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
