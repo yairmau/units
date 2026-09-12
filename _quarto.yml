@@ -2,9 +2,24 @@ project:
   type: book
   output-dir: docs
 
+lang: en
+
+babelquarto:
+  languagelinks: sidebar
+  languagecodes:
+    - name: en
+      text: English
+    - name: he
+      text: עברית
+  mainlanguage: en
+  languages: [he]
+
+title-he: "יחידות"
+author-he: "Yair Mau"
 
 book:
   title: "units"
+  site-url: https://yairmau.github.io/units/
   author: "Yair Mau"
   repo-url: https://github.com/yairmau/units/
   favicon: archive/logo.png
@@ -26,6 +41,7 @@ book:
 
 format:
   html:
+    css: hebrew.css
     theme:
     - flatly
     - custom.scss
@@ -47,4 +63,3 @@ format:
     documentclass: scrreprt
     include-in-header:
       - latex_preamble.tex
-

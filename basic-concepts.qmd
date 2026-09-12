@@ -8,7 +8,9 @@ Areas have the dimension of length$^2$, and volumes have the dimension of length
 When converting units of area or volume, don't forget to square or cube the prefixes. Huh?  
 Let me give an example.
 
-> how many square meters are in a square kilometer?
+::: {.card-info}
+How many square meters are in a square kilometer?
+:::
 
 $$
 1\, \mathrm{km}^2 = 1 \left( 10^3 \mathrm{m} \right)^2 = 1 \left( 10^3 \right)^2 \left(\mathrm{m} \right)^2 = 10^6\, \mathrm{m}^2
@@ -20,7 +22,9 @@ There are a million square meters in a square kilometers.
 
 One liter is the volume of a cube of side 10 cm.
 
-> How many liters are in a cubic meter?
+::: {.card-info}
+How many liters are in a cubic meter?
+:::
 
 $$
 1\, \mathrm{m}^3 = (100\, \mathrm{cm})^3 = \left(10 \cdot 10\, \mathrm{cm}\right)^3 = 10^3\left(10\, \mathrm{cm}\right)^3 = 10^3\, \mathrm{L}
@@ -32,7 +36,9 @@ There are a thousand liters in a cubic meter.
 
 Concentrations and densities basically answer the question:
 
-> how much of something is there in a given volume?
+::: {.card-info}
+How much of something is there in a given volume?
+:::
 
 Let's unpack that.
 
@@ -47,11 +53,16 @@ Concentrations are very commonly used in chemistry. The quantities can be moles,
 
 There are several flavors of densities, but usually we mean mass density:
 
-> how much mass is there in a given volume?
+::: {.card-info}
+How much mass is there in a given volume?
+:::
 
 For instance, the density of iron is 7.87 g/cm$^3$
 
-> what is the density of iron in kg/m$^3$?
+::: {.card-info}
+What is the density of iron in kg/m$^3$?
+:::
+
 
 \begin{align}
 &7.87\, &&\mathrm{g}&&\mathrm{cm}^{-3} \\

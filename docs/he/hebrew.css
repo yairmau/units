@@ -1,0 +1,30 @@
+/* Keep formulas and code readable inside right-to-left prose. */
+html[dir="rtl"] .math,
+html[dir="rtl"] .katex-display,
+html[dir="rtl"] pre,
+html[dir="rtl"] code {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+html[dir="rtl"] .math.inline {
+  display: inline-block;
+}
+
+/* Long derivations scroll within the page on narrow screens. */
+html[dir="rtl"] .math.display {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+html[dir="rtl"] main ul,
+html[dir="rtl"] main ol {
+  padding-left: 0;
+  padding-right: 2rem;
+}
+
+html[dir="rtl"] th,
+html[dir="rtl"] td {
+  text-align: start;
+}
