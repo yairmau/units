@@ -2,7 +2,7 @@
   {
     "objectID": "index.he.html",
     "href": "index.he.html",
-    "title": "יחידות",
+    "title": "אֵיפָה וְאֵיפָה",
     "section": "",
     "text": "דף הבית",
     "crumbs": [
@@ -50,33 +50,47 @@
     ]
   },
   {
-    "objectID": "basic-concepts.he.html",
-    "href": "basic-concepts.he.html",
-    "title": "2  מושגי יסוד",
+    "objectID": "basic_concepts/area-and-volume.he.html",
+    "href": "basic_concepts/area-and-volume.he.html",
+    "title": "2  שטח ונפח",
     "section": "",
-    "text": "2.1 שטח ונפח\nלשטח יש ממד של אורך בריבוע, ולנפח יש ממד של אורך בחזקה שלוש.\nשימו לב!\nבהמרת יחידות של שטח או נפח, אל תשכחו להעלות גם את גורם ההמרה בריבוע או בחזקה שלוש. למה הכוונה?\nהנה דוגמה.\n1\\, \\mathrm{km}^2 = 1 \\left( 10^3 \\mathrm{m} \\right)^2 = 1 \\left( 10^3 \\right)^2 \\left(\\mathrm{m} \\right)^2 = 10^6\\, \\mathrm{m}^2\nבקילומטר רבוע יש מיליון מטרים רבועים.",
+    "text": "ליטר\nלשטח יש ממד של אורך בריבוע, ולנפח יש ממד של אורך בחזקה שלוש.\nשימו לב!\nבהמרת יחידות של שטח או נפח, אל תשכחו להעלות גם את גורם ההמרה בריבוע או בחזקה שלוש. למה הכוונה?\nהנה דוגמה.\n1\\, \\mathrm{km}^2 = 1 \\left( 10^3 \\mathrm{m} \\right)^2 = 1 \\left( 10^3 \\right)^2 \\left(\\mathrm{m} \\right)^2 = 10^6\\, \\mathrm{m}^2\nבקילומטר רבוע יש מיליון מטרים רבועים.\nליטר אחד הוא הנפח של קובייה שאורך צלעה 10\\,\\mathrm{cm}.\n1\\, \\mathrm{m}^3 = (100\\, \\mathrm{cm})^3 = \\left(10 \\cdot 10\\, \\mathrm{cm}\\right)^3 = 10^3\\left(10\\, \\mathrm{cm}\\right)^3 = 10^3\\, \\mathrm{L}\nבמטר מעוקב יש אלף ליטרים.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>מושגי יסוד</span>"
+      "מושגי יסוד",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>שטח ונפח</span>"
     ]
   },
   {
-    "objectID": "basic-concepts.he.html#שטח-ונפח",
-    "href": "basic-concepts.he.html#שטח-ונפח",
-    "title": "2  מושגי יסוד",
+    "objectID": "basic_concepts/area-and-volume.he.html#ליטר",
+    "href": "basic_concepts/area-and-volume.he.html#ליטר",
+    "title": "2  שטח ונפח",
     "section": "",
-    "text": "כמה מטרים רבועים יש בקילומטר רבוע?\n\n\n\n\nליטר\nליטר אחד הוא הנפח של קובייה שאורך צלעה 10\\,\\mathrm{cm}.\n\nכמה ליטרים יש במטר מעוקב?\n\n\n1\\, \\mathrm{m}^3 = (100\\, \\mathrm{cm})^3 = \\left(10 \\cdot 10\\, \\mathrm{cm}\\right)^3 = 10^3\\left(10\\, \\mathrm{cm}\\right)^3 = 10^3\\, \\mathrm{L}\n\nבמטר מעוקב יש אלף ליטרים.",
+    "text": "כמה ליטרים יש במטר מעוקב?",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>מושגי יסוד</span>"
+      "מושגי יסוד",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>שטח ונפח</span>"
     ]
   },
   {
-    "objectID": "basic-concepts.he.html#ריכוזים-וצפיפויות",
-    "href": "basic-concepts.he.html#ריכוזים-וצפיפויות",
-    "title": "2  מושגי יסוד",
-    "section": "2.2 ריכוזים וצפיפויות",
-    "text": "2.2 ריכוזים וצפיפויות\nריכוזים וצפיפויות עונים למעשה על השאלה:\n\nכמה מחומר מסוים יש בנפח נתון?\n\nנפרט מעט.\n\nריכוז\nריכוזים נפוצים מאוד בכימיה. הכמויות יכולות להימדד במולים, בגרמים, במיליגרמים וכדומה. הנפחים יכולים להימדד בליטרים, במיליליטרים וכדומה. כמה דוגמאות:\n\nריכוז של חומר תרופתי מסוים: 2\\,\\mu\\mathrm{g}/\\mathrm{mL}\nריכוז של מגיב: 0.5\\,\\mathrm{mol}/\\mathrm{L}\n\n\n\nצפיפות\nיש כמה סוגים של צפיפות, אך בדרך כלל הכוונה היא לצפיפות מסה:\n\nכמה מסה יש בנפח נתון?\n\nלמשל, צפיפות הברזל היא 7.87\\,\\mathrm{g}/\\mathrm{cm}^{3}.\n\nמהי צפיפות הברזל ביחידות של \\mathrm{kg}/\\mathrm{m}^{3}?\n\n\\begin{align}\n&7.87\\, &&\\mathrm{g}&&\\mathrm{cm}^{-3} \\\\\n&7.87\\, &&\\left(10^{-3}10^3\\,\\mathrm{g}\\right) &&(10^{-2}\\,\\mathrm{m})^{-3}\\\\\n&7.87\\, &&\\left(10^{-3}\\,\\mathrm{kg}\\right) &&(10^{-2})^{-3}\\, (\\mathrm{m})^{-3}\\\\\n&7.87\\, &&10^{-3}\\, \\mathrm{kg} &&10^{6}\\, \\mathrm{m}^{-3}\\\\\n&7.87\\cdot10^{-3}10^{6} &&\\mathrm{kg} &&\\mathrm{m}^{-3}\\\\\n&7.87\\cdot10^{3} &&\\mathrm{kg} &&\\mathrm{m}^{-3}\\\\\n\\end{align}\nבמטר מעוקב של ברזל יש 7870\\,\\mathrm{kg}.\nודאו שאתם מבינים מה קורה בכל אחת מהמשוואות שלמעלה.",
+    "objectID": "basic_concepts/concentration.he.html",
+    "href": "basic_concepts/concentration.he.html",
+    "title": "3  ריכוז",
+    "section": "",
+    "text": "ריכוזים עונים למעשה על השאלה:\n\nכמה מחומר מסוים יש בנפח נתון?\n\nריכוזים נפוצים מאוד בכימיה. הכמויות יכולות להימדד במולים, בגרמים, במיליגרמים וכדומה. הנפחים יכולים להימדד בליטרים, במיליליטרים וכדומה. כמה דוגמאות:\n\nריכוז של חומר תרופתי מסוים: 2\\,\\mu\\mathrm{g}/\\mathrm{mL}\nריכוז של מגיב: 0.5\\,\\mathrm{mol}/\\mathrm{L}",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>מושגי יסוד</span>"
+      "מושגי יסוד",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>ריכוז</span>"
+    ]
+  },
+  {
+    "objectID": "basic_concepts/density.he.html",
+    "href": "basic_concepts/density.he.html",
+    "title": "4  צפיפות",
+    "section": "",
+    "text": "יש כמה סוגים של צפיפות, אך בדרך כלל הכוונה היא לצפיפות מסה:\n\nכמה מסה יש בנפח נתון?\n\nלמשל, צפיפות הברזל היא 7.87\\,\\mathrm{g}/\\mathrm{cm}^{3}.\n\nמהי צפיפות הברזל ביחידות של \\mathrm{kg}/\\mathrm{m}^{3}?\n\n\\begin{align}\n&7.87\\, &&\\mathrm{g}&&\\mathrm{cm}^{-3} \\\\\n&7.87\\, &&\\left(10^{-3}10^3\\,\\mathrm{g}\\right) &&(10^{-2}\\,\\mathrm{m})^{-3}\\\\\n&7.87\\, &&\\left(10^{-3}\\,\\mathrm{kg}\\right) &&(10^{-2})^{-3}\\, (\\mathrm{m})^{-3}\\\\\n&7.87\\, &&10^{-3}\\, \\mathrm{kg} &&10^{6}\\, \\mathrm{m}^{-3}\\\\\n&7.87\\cdot10^{-3}10^{6} &&\\mathrm{kg} &&\\mathrm{m}^{-3}\\\\\n&7.87\\cdot10^{3} &&\\mathrm{kg} &&\\mathrm{m}^{-3}\\\\\n\\end{align}\nבמטר מעוקב של ברזל יש 7870\\,\\mathrm{kg}.\nודאו שאתם מבינים מה קורה בכל אחת מהמשוואות שלמעלה.",
+    "crumbs": [
+      "מושגי יסוד",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>צפיפות</span>"
     ]
   }
 ]

@@ -50,33 +50,58 @@
     ]
   },
   {
-    "objectID": "basic-concepts.html",
-    "href": "basic-concepts.html",
-    "title": "2  basic concepts",
+    "objectID": "basic_concepts/area-and-volume.html",
+    "href": "basic_concepts/area-and-volume.html",
+    "title": "2  area and volume",
     "section": "",
-    "text": "2.1 area and volume\nAreas have the dimension of length^2, and volumes have the dimension of length^3.\nAttention!\nWhen converting units of area or volume, don’t forget to square or cube the prefixes. Huh?\nLet me give an example.\n1\\, \\mathrm{km}^2 = 1 \\left( 10^3 \\mathrm{m} \\right)^2 = 1 \\left( 10^3 \\right)^2 \\left(\\mathrm{m} \\right)^2 = 10^6\\, \\mathrm{m}^2\nThere are a million square meters in a square kilometers.",
+    "text": "liter\nAreas have the dimension of length squared (L^2), and volumes have the dimension of length cubed (L^3).\nAttention!\nWhen converting units of area or volume, don’t forget to square or cube the prefixes. Huh?\nLet me give an example.\n1\\, \\mathrm{km}^2 = 1 \\left( 10^3 \\mathrm{m} \\right)^2 = 1 \\left( 10^3 \\right)^2 \\left(\\mathrm{m} \\right)^2 = 10^6\\, \\mathrm{m}^2\nThere are a million square meters in a square kilometers.\nOne liter is the volume of a cube of side 10 cm.\n1\\, \\mathrm{m}^3 = (100\\, \\mathrm{cm})^3 = \\left(10 \\cdot 10\\, \\mathrm{cm}\\right)^3 = 10^3\\left(10\\, \\mathrm{cm}\\right)^3 = 10^3\\, \\mathrm{L}\nThere are a thousand liters in a cubic meter.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>basic concepts</span>"
+      "basic concepts",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>area and volume</span>"
     ]
   },
   {
-    "objectID": "basic-concepts.html#area-and-volume",
-    "href": "basic-concepts.html#area-and-volume",
-    "title": "2  basic concepts",
+    "objectID": "basic_concepts/area-and-volume.html#liter",
+    "href": "basic_concepts/area-and-volume.html#liter",
+    "title": "2  area and volume",
     "section": "",
-    "text": "How many square meters are in a square kilometer?\n\n\n\n\nliter\nOne liter is the volume of a cube of side 10 cm.\n\nHow many liters are in a cubic meter?\n\n\n1\\, \\mathrm{m}^3 = (100\\, \\mathrm{cm})^3 = \\left(10 \\cdot 10\\, \\mathrm{cm}\\right)^3 = 10^3\\left(10\\, \\mathrm{cm}\\right)^3 = 10^3\\, \\mathrm{L}\n\nThere are a thousand liters in a cubic meter.",
+    "text": "How many liters are in a cubic meter?",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>basic concepts</span>"
+      "basic concepts",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>area and volume</span>"
     ]
   },
   {
-    "objectID": "basic-concepts.html#concentrations-and-densities",
-    "href": "basic-concepts.html#concentrations-and-densities",
-    "title": "2  basic concepts",
-    "section": "2.2 concentrations and densities",
-    "text": "2.2 concentrations and densities\nConcentrations and densities basically answer the question:\n\nHow much of something is there in a given volume?\n\nLet’s unpack that.\n\nconcentration\nConcentrations are very commonly used in chemistry. The quantities can be moles, grams, milligrams, etc. The volumes can be liters, milliliters, etc. A few examples:\n\nconcentration of a given medical compound: 2 \\mug/mL\nconcentration of a reagent: 0.5 mol/L\n\n\n\ndensity\nThere are several flavors of densities, but usually we mean mass density:\n\nHow much mass is there in a given volume?\n\nFor instance, the density of iron is 7.87 g/cm^3\n\nWhat is the density of iron in kg/m^3?\n\n\\begin{align}\n&7.87\\, &&\\mathrm{g}&&\\mathrm{cm}^{-3} \\\\\n&7.87\\, &&\\left(10^{-3}10^3\\,\\mathrm{g}\\right) &&(10^{-2}\\,\\mathrm{m})^{-3}\\\\\n&7.87\\, &&\\left(10^{-3}\\,\\mathrm{kg}\\right) &&(10^{-2})^{-3}\\, (\\mathrm{m})^{-3}\\\\\n&7.87\\, &&10^{-3}\\, \\mathrm{kg} &&10^{6}\\, \\mathrm{m}^{-3}\\\\\n&7.87\\cdot10^{-3}10^{6} &&\\mathrm{kg} &&\\mathrm{m}^{-3}\\\\\n&7.87\\cdot10^{3} &&\\mathrm{kg} &&\\mathrm{m}^{-3}\\\\\n\\end{align}\nThere are 7870 kg of iron in a cubic meter.\nMake sure you are comfortable with what’s going on in each of the equations above.",
+    "objectID": "basic_concepts/concentrations-and-densities.html",
+    "href": "basic_concepts/concentrations-and-densities.html",
+    "title": "3  concentrations and densities",
+    "section": "",
+    "text": "concentration\nConcentrations and densities basically answer the question:\nLet’s unpack that.\nConcentrations are very commonly used in chemistry. The quantities can be moles, grams, milligrams, etc. The volumes can be liters, milliliters, etc. A few examples:",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>basic concepts</span>"
+      "basic concepts",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>concentrations and densities</span>"
+    ]
+  },
+  {
+    "objectID": "basic_concepts/concentrations-and-densities.html#concentration",
+    "href": "basic_concepts/concentrations-and-densities.html#concentration",
+    "title": "3  concentrations and densities",
+    "section": "",
+    "text": "concentration of a given medical compound: 2 \\mug/mL\nconcentration of a reagent: 0.5 mol/L",
+    "crumbs": [
+      "basic concepts",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>concentrations and densities</span>"
+    ]
+  },
+  {
+    "objectID": "basic_concepts/concentrations-and-densities.html#density",
+    "href": "basic_concepts/concentrations-and-densities.html#density",
+    "title": "3  concentrations and densities",
+    "section": "density",
+    "text": "density\nThere are several flavors of densities, but usually we mean mass density:\n\nHow much mass is there in a given volume?\n\nFor instance, the density of iron is 7.87 g/cm^3\n\nWhat is the density of iron in kg/m^3?\n\n\\begin{align}\n&7.87\\, &&\\mathrm{g}&&\\mathrm{cm}^{-3} \\\\\n&7.87\\, &&\\left(10^{-3}10^3\\,\\mathrm{g}\\right) &&(10^{-2}\\,\\mathrm{m})^{-3}\\\\\n&7.87\\, &&\\left(10^{-3}\\,\\mathrm{kg}\\right) &&(10^{-2})^{-3}\\, (\\mathrm{m})^{-3}\\\\\n&7.87\\, &&10^{-3}\\, \\mathrm{kg} &&10^{6}\\, \\mathrm{m}^{-3}\\\\\n&7.87\\cdot10^{-3}10^{6} &&\\mathrm{kg} &&\\mathrm{m}^{-3}\\\\\n&7.87\\cdot10^{3} &&\\mathrm{kg} &&\\mathrm{m}^{-3}\\\\\n\\end{align}\nThere are 7870 kg of iron in a cubic meter.\nMake sure you are comfortable with what’s going on in each of the equations above.",
+    "crumbs": [
+      "basic concepts",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>concentrations and densities</span>"
     ]
   }
 ]

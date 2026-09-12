@@ -1,0 +1,27 @@
+# density
+
+There are several flavors of densities, but usually we mean mass density:
+
+::: {.card-info}
+How much mass is there in a given volume?
+:::
+
+For instance, the density of iron is 7.87 g/cm$^3$
+
+::: {.card-info}
+What is the density of iron in kg/m$^3$?
+:::
+
+
+\begin{align}
+&7.87\, &&\mathrm{g}&&\mathrm{cm}^{-3} \\
+&7.87\, &&\left(10^{-3}10^3\,\mathrm{g}\right) &&(10^{-2}\,\mathrm{m})^{-3}\\
+&7.87\, &&\left(10^{-3}\,\mathrm{kg}\right) &&(10^{-2})^{-3}\, (\mathrm{m})^{-3}\\
+&7.87\, &&10^{-3}\, \mathrm{kg} &&10^{6}\, \mathrm{m}^{-3}\\
+&7.87\cdot10^{-3}10^{6} &&\mathrm{kg} &&\mathrm{m}^{-3}\\
+&7.87\cdot10^{3} &&\mathrm{kg} &&\mathrm{m}^{-3}\\
+\end{align}
+
+There are 7870 kg of iron in a cubic meter.
+
+Make sure you are comfortable with what's going on in each of the equations above.

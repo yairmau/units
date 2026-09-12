@@ -1,0 +1,99 @@
+# area and volume
+
+Areas have the dimension of length squared ($L^2$), and volumes have the dimension of length cubed ($L^3$).
+
+::: {.my-4}
+
+```{.tikz}
+%%| filename: area-and-volume
+%%| image-width: 100%
+%%| alt: A blue rectangle with sides a and b and area ab, alongside a teal rectangular parallelepiped with sides a, b, and c and volume abc.
+
+\begin{tikzpicture}[line join=round, line cap=round,
+  font=\sffamily,
+  edge/.style={line width=0.9pt},
+  dimension/.style={<->, >=stealth, line width=0.5pt},
+  guide/.style={line width=0.35pt}]
+  \definecolor{ink}{HTML}{243746}
+  \definecolor{blue}{HTML}{287DB0}
+  \definecolor{teal}{HTML}{168A83}
+  \definecolor{muted}{HTML}{687B89}
+
+  % Two dimensions: a true rectangle, viewed straight on.
+  \begin{scope}
+    \node[text=blue, font=\sffamily\bfseries\small] at (1.7,3.5) {2D\quad AREA};
+    \fill[blue!9] (0,0) rectangle (3.5,2.0);
+    \draw[step=0.50, blue!17, very thin] (0,0) grid (3.5,2.0);
+    \draw[blue, edge] (0,0) rectangle (3.5,2.0);
+    % Right-angle marker.
+    \draw[blue!65, guide] (0.22,0) -- (0.22,0.22) -- (0,0.22);
+
+    \draw[blue!40, guide] (0,-0.12) -- (0,-0.55);
+    \draw[blue!40, guide] (3.5,-0.12) -- (3.5,-0.55);
+    \draw[blue, dimension] (0,-0.4) -- node[fill=white, inner sep=3pt, text=ink] {$a$} (3.5,-0.4);
+    \draw[blue!40, guide] (-0.12,0) -- (-0.55,0);
+    \draw[blue!40, guide] (-0.12,2.0) -- (-0.55,2.0);
+    \draw[blue, dimension] (-0.4,0) -- node[fill=white, inner sep=3pt, text=ink] {$b$} (-0.4,2.0);
+
+    \node[text=ink, font=\sffamily\bfseries] at (1.7,-1.02) {Rectangle};
+    \node[text=ink] at (1.7,-1.57) {$A = a\,b$};
+    \node[text=muted, font=\sffamily\small] at (1.7,-2.08) {length $\times$ length};
+  \end{scope}
+
+  \draw[ink!12, line width=0.4pt] (4.9,-2.35) -- (4.9,3.8);
+
+  % Three dimensions: the same rectangular face extruded in depth.
+  % Every vertex is a sum of three consistent edge vectors.
+  \begin{scope}[xshift=6.25cm]
+    \node[text=teal, font=\sffamily\bfseries\small] at (2,3.55) {3D\quad VOLUME};
+    \fill[teal!14] (0,0) -- (2.9,0) -- (2.9,2.2) -- (0,2.2) -- cycle;
+    \fill[teal!7] (0,2.2) -- (1.1,3) -- (4,3) -- (2.9,2.2) -- cycle;
+    \fill[teal!32] (2.9,0) -- (4,0.8) -- (4,3) -- (2.9,2.2) -- cycle;
+    \draw[teal, edge] (0,0) -- (2.9,0) -- (4,0.8) -- (4,3) -- (1.1,3) -- (0,2.2) -- cycle;
+    \draw[teal, edge] (0,2.2) -- (2.9,2.2) -- (4,3);
+    \draw[teal, edge] (2.9,0) -- (2.9,2.2);
+
+    \draw[teal!40, guide] (0,-0.12) -- (0,-0.55);
+    \draw[teal!40, guide] (2.9,-0.12) -- (2.9,-0.55);
+    \draw[teal, dimension] (0,-0.4) -- node[fill=white, inner sep=3pt, text=ink] {$a$} (2.9,-0.4);
+    \draw[teal!40, guide] (4.12,0.8) -- (4.6,0.8);
+    \draw[teal!40, guide] (4.12,3) -- (4.6,3);
+    \draw[teal, dimension] (4.45,0.8) -- node[fill=white, inner sep=3pt, text=ink] {$c$} (4.45,3);
+    \draw[teal, dimension] (3.18,-0.21) -- node[fill=white, inner sep=3pt, text=ink] {$b$} (4.28,0.59);
+
+    \node[text=ink, font=\sffamily\bfseries] at (2,-1.02) {Rectangular parallelepiped};
+    \node[text=ink] at (2,-1.57) {$V = a\,b\,c$};
+    \node[text=muted, font=\sffamily\small] at (2,-2.08) {length $\times$ length $\times$ length};
+  \end{scope}
+\end{tikzpicture}
+```
+
+:::
+
+**Attention!**  
+When converting units of area or volume, don't forget to square or cube the prefixes. Huh?  
+Let me give an example.
+
+::: {.card-info}
+How many square meters are in a square kilometer?
+:::
+
+$$
+1\, \mathrm{km}^2 = 1 \left( 10^3 \mathrm{m} \right)^2 = 1 \left( 10^3 \right)^2 \left(\mathrm{m} \right)^2 = 10^6\, \mathrm{m}^2
+$$
+
+There are a million square meters in a square kilometers.
+
+## liter {.unnumbered}
+
+One liter is the volume of a cube of side 10 cm.
+
+::: {.card-info}
+How many liters are in a cubic meter?
+:::
+
+$$
+1\, \mathrm{m}^3 = (100\, \mathrm{cm})^3 = \left(10 \cdot 10\, \mathrm{cm}\right)^3 = 10^3\left(10\, \mathrm{cm}\right)^3 = 10^3\, \mathrm{L}
+$$
+
+There are a thousand liters in a cubic meter.

@@ -1,3 +1,26 @@
+/* Local fonts: Hebrew letters, vowel marks, punctuation and presentation forms. */
+@font-face {
+  font-family: "Alef";
+  src: url("fonts/alef/Alef-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0590-05FF, U+FB1D-FB4F;
+}
+
+@font-face {
+  font-family: "Alef";
+  src: url("fonts/alef/Alef-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0590-05FF, U+FB1D-FB4F;
+}
+
+code, pre, kbd, samp {
+  font-family: "Alef", var(--bs-font-monospace);
+}
+
 /* Keep formulas and code readable inside right-to-left prose. */
 html[dir="rtl"] .math,
 html[dir="rtl"] .katex-display,
@@ -27,4 +50,37 @@ html[dir="rtl"] main ol {
 html[dir="rtl"] th,
 html[dir="rtl"] td {
   text-align: start;
+}
+
+/* Quarto's part headings use Bootstrap's left-aligned .text-start utility. */
+html[dir="rtl"] #quarto-sidebar .sidebar-item-text,
+html[dir="rtl"] #quarto-sidebar .sidebar-item-toggle {
+  text-align: right !important;
+}
+
+html[dir="rtl"] #quarto-sidebar .sidebar-section {
+  padding-left: 0;
+  padding-right: 0.75rem;
+}
+
+/* Keep wrapped chapter titles aligned after their chapter number. */
+html[dir="rtl"] #quarto-sidebar .sidebar-item-text .menu-text {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35em;
+}
+
+html[dir="rtl"] #quarto-sidebar .chapter-number {
+  flex-shrink: 0;
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+html[dir="rtl"] #quarto-sidebar .sidebar-item-toggle .bi {
+  margin-left: 0 !important;
+  margin-right: 0.5rem;
+}
+
+html[dir="rtl"] #quarto-sidebar .sidebar-item-toggle[aria-expanded="false"] .bi-chevron-right::before {
+  transform: rotate(180deg);
 }

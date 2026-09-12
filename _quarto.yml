@@ -1,33 +1,48 @@
 project:
   type: book
   output-dir: docs
+  resources:
+    - fonts/
 
 lang: en
+
+filters:
+  - tikz
+
+tikz:
+  svg-engine: pdftocairo
 
 babelquarto:
   languagelinks: sidebar
   languagecodes:
     - name: en
-      text: English
+      text: ":English"
     - name: he
-      text: עברית
+      text: ":עברית"
   mainlanguage: en
   languages: [he]
 
-title-he: "יחידות"
+title-he: "אֵיפָה וְאֵיפָה"
+subtitle-he: "ממדים, יחידות וסדרי גודל"
 author-he: "Yair Mau"
 
 book:
-  title: "units"
+  title: "Measure for Measure"
+  subtitle: "Dimensions, units, and orders of magnitude"
   site-url: https://yairmau.github.io/units/
   author: "Yair Mau"
   repo-url: https://github.com/yairmau/units/
   favicon: archive/logo.png
 
   chapters:
-    - index.qmd
-    - intro.qmd
-    - basic-concepts.qmd
+    - index.en.qmd
+    - intro.en.qmd
+    - part: basic concepts
+      part-he: מושגי יסוד
+      chapters:
+        - basic_concepts/area-and-volume.en.qmd
+        - basic_concepts/concentration.en.qmd
+        - basic_concepts/density.en.qmd
 
   sidebar:
     collapse-level: 2
@@ -41,12 +56,13 @@ book:
 
 format:
   html:
-    css: hebrew.css
+    css:
+      - hebrew.css
+      - styles.css
     theme:
     - flatly
     - custom.scss
     # - font_defs.css
-    # css: styles.css
     fontsize: 1.2em
     highlight-style: kate-custom.theme #kate #solarized # kate # tango # breeze # ayu # monokai # breezedark # espresso
     include-in-header:

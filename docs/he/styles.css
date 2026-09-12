@@ -1,0 +1,58 @@
+/* Container for the paper effect */
+.curved-paper {
+  position: relative;
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  background: #ffffff;
+  padding: 6px;
+  margin: 20px auto 35px;
+
+  /* 1. Subtle hairline border to clearly define all edges */
+  border: 1px solid rgba(0, 0, 0, 0.18);
+
+  /* 2. Soft top & ambient shadow: 
+        - First shadow (0 -1px 3px): casts slightly upward to define the top edge
+        - Second shadow (0 1px 4px): gives subtle baseline depth */
+  box-shadow: 
+    0 -1px 3px rgba(0, 0, 0, 0.05),
+    0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+/* Base style for both bottom corner shadow anchors */
+.curved-paper::before,
+.curved-paper::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 12px;
+  width: 50%;
+  height: 20%;
+  max-width: 300px;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Left curved corner */
+.curved-paper::before {
+  left: 10px;
+  transform: rotate(-4deg);
+}
+
+/* Right curved corner */
+.curved-paper::after {
+  right: 10px;
+  transform: rotate(4deg);
+}
+
+/* Ensure the image stays strictly on top of the shadow */
+.curved-paper img {
+  display: block;
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+}
+
+/* Preserve an explicit Quarto height; otherwise size images proportionally. */
+.curved-paper img:not([height]) {
+  height: auto;
+}
