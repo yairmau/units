@@ -1,0 +1,195 @@
+# power rules
+
+## product rule
+
+It is no surprise that
+
+$$
+100 \cdot 1000 = 100000.
+$$
+
+Using power notation, the same can be written as
+
+$$
+10^2 \cdot 10^3 = 10^{2+3} = 10^5.
+$$
+
+Now we're getting at something. Generalizing the pattern above, we can write the one important rule we need:
+
+::: {.card-success}
+$$
+10^a \cdot 10^b = 10^{a+b}.
+$$
+:::
+
+## zero exponent rule
+
+From the product rule above we can derive all sorts of other useful relationships. Let's start by taking $b=0$ in the product rule:
+
+$$
+10^a \cdot 10^0 = 10^{a+0} = 10^{a}.
+$$
+
+The only way to make the product rule true when one of the exponents is zero is to conclude the following:
+
+::: {.card-success}
+$$
+10^0 = 1
+$$
+:::
+
+## negative exponent rule
+
+What happens if one of the exponents is negative? For example, let's substitute $b=-a$ in the product rule:
+
+$$
+10^a \cdot 10^{-a} = 10^{a-a} = 10^0 = 1.
+$$
+
+If we divide both sides of the equation above by $10^a$ we get
+
+::: {.card-success}
+$$
+10^{-a} = \frac{1}{10^a}.
+$$
+:::
+
+We've found that negative powers are related to *reciprocals*. ($1/x$ is called the reciprocal of $x$)
+
+## quotient rule
+
+Now that we know how to deal with negative exponents, we can deal with a power divided by another power:
+
+$$
+10^a \div 10^b = 10^a \cdot \frac{1}{10^b} = 10^a \cdot 10^{-b} = 10^{a-b},
+$$
+
+or in short
+
+::: {.card-success}
+$$
+10^a \div 10^b = 10^{a-b}.
+$$
+:::
+
+## power of a power rule
+
+What happens when we raise a power to another power?
+
+$$
+(10^a)^b
+=\underbrace{10^a\cdot10^a\cdots10^a}_{b\text{ factors}}
+=10^{\overbrace{a+a+\cdots+a}^{b\text{ terms}}}
+=10^{ab}.
+$$
+
+So, in short:
+
+::: {.card-success}
+$$
+(10^a)^b = 10^{ab}.
+$$
+:::
+
+## fractional exponent rule
+
+What should a fractional exponent mean? Start with $10^{1/2}$.
+Using the power-of-a-power rule:
+
+$$
+(10^{1/2})^2=10^{\frac{1}{2}\cdot 2} = 10.
+$$
+
+We don't really want the *square* of $10^{1/2}$, so how to *undo* the squaring operation?
+We take the *square root*, $\sqrt[2]{\,\,}$. So we've learned that $10^{1/2}=\sqrt[2]{10}$.
+
+The same reasoning works for any fraction $a/b$ (given that $b$ is positive):
+
+$$
+(10^{a/b})^b = 10^{\frac{a}{b}\cdot b} = 10^a.
+$$
+
+To *undo* the exponentiation by $b$, we take the $b$th root ($\sqrt[b]{\,\,}$) of the equation above:
+
+::: {.card-success}
+$$
+10^{a/b} = \sqrt[b]{10^a}.
+$$
+:::
+
+## the power $10$
+
+We used the base $10$ in all the rules above, but there's nothing sacred about it, we could have chosen any other number.
+Mastering how to work with powers of $10$ will be extremely useful in the other chapters of this website, so that's why you see it here.
+
+##  power of a product / quotient
+
+So far, we have kept the base fixed at $10$ and explored how exponents combine.
+Now let’s look inside the base:
+what happens when we raise a product or a quotient to a power?
+The same idea, repeated multiplication, gives us two more rules.
+
+Take, for instance
+
+$$
+(ab)^3
+=(ab)(ab)(ab)
+=(aaa)(bbb)
+=a^3b^3.
+$$
+
+Each factor contributes one $a$ and one $b$.
+If instead of $3$ we had $c$ factors, we get $c$ copies of each:
+
+::: {.card-success}
+$$
+(ab)^c = a^c b^c.
+$$
+:::
+
+The quotient rule follows immediately by writing division as multiplication by a reciprocal:
+
+$$
+\left(\frac ab\right)^c
+=(ab^{-1})^c
+=a^c(b^{-1})^c
+=a^cb^{-c}
+=\frac{a^c}{b^c},
+$$
+
+... so in short,
+
+::: {.card-success}
+$$
+\left(\frac ab\right)^c = \frac{a^c}{b^c}.
+$$
+:::
+
+## repeated multiplication
+
+We started this chapter with repeated multiplication:
+for a positive integer $n$, $10^n$ means a product of $n$ factors of $10$. This gives us the product rule:
+
+$$
+10^a \cdot 10^b = 10^{a+b}.
+$$
+
+But what should $10^{-2}$ or $10^{3/2}$ mean?
+We can't literally write a product containing $-2$ or $3/2$ factors.
+Instead, we use the product rule as our guide.
+We define powers with zero, negative, and fractional exponents so that the rule keeps working.
+As we've seen, this leads us to $10^0=1$, negative powers as reciprocals, and fractional powers as roots.
+Repeated multiplication gets us started, and preserving the rule takes us further.
+
+## to sum up
+
+\begin{align}
+10^a \cdot 10^b &= 10^{a+b} \\
+10^0 &= 1 \\
+10^{-a} &= \frac{1}{10^a} \\
+10^a \div 10^b &= 10^{a-b} \\
+(10^a)^b &= 10^{ab} \\
+10^{a/b} &= \sqrt[b]{10^a} \\
+(ab)^c &= a^c b^c \\
+\left(\frac ab\right)^c &= \frac{a^c}{b^c}
+\end{align}

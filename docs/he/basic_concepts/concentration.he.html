@@ -7,7 +7,7 @@
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.9.36">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>3  ריכוז – אֵיפָה וְאֵיפָה</title>
+<title>5  ריכוז – אֵיפָה וְאֵיפָה</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -59,7 +59,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "חפש"
   }
 }</script><link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-<script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script><script>document.addEventListener("DOMContentLoaded", function () {
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const button = document.querySelector(".quarto-secondary-nav .quarto-btn-toggle");
+  if (!button) return;
+  const hebrew = document.documentElement.lang.startsWith("he");
+  const label = document.createElement("span");
+  label.className = "chapter-menu-label";
+  label.textContent = hebrew ? "פרקים" : "Chapters";
+  button.append(label);
+  button.setAttribute("aria-label", label.textContent);
+  button.querySelector("i")?.setAttribute("aria-hidden", "true");
+});
+</script><script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script><script>document.addEventListener("DOMContentLoaded", function () {
  var mathElements = document.getElementsByClassName("math");
  var macros = [];
  for (var i = 0; i < mathElements.length; i++) {
@@ -110,7 +122,7 @@ window.Quarto = {
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb">
 <li class="breadcrumb-item"><a href="../basic_concepts/area-and-volume.he.html">מושגי יסוד</a></li>
-<li class="breadcrumb-item"><a href="../basic_concepts/concentration.he.html"><span class="chapter-number">3</span>  <span class="chapter-title">ריכוז</span></a></li>
+<li class="breadcrumb-item"><a href="../basic_concepts/concentration.he.html"><span class="chapter-number">5</span>  <span class="chapter-title">ריכוז</span></a></li>
 </ol></nav><a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="הצג/הסתר את סרגל הניווט" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="חפש" onclick="window.quartoOpenSearch();">
@@ -146,16 +158,10 @@ window.Quarto = {
  <span class="menu-text">דף הבית</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../intro.he.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>  <span class="chapter-title">מבוא</span></span></a>
-  </div>
-</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">מושגי יסוד</span></a>
+ <span class="menu-text">יסודות מתמטיים</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="הצג/הסתר מקטע">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -163,20 +169,60 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../mathematical_foundations/powers_rules.he.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>  <span class="chapter-title">חוקי חזקות</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">לכמת את העולם</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="הצג/הסתר מקטע">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../quantifying/dimensions.he.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>  <span class="chapter-title">ממדים</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../quantifying/units.he.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>  <span class="chapter-title">יחידות</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">מושגי יסוד</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="הצג/הסתר מקטע">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../basic_concepts/area-and-volume.he.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>  <span class="chapter-title">שטח ונפח</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>  <span class="chapter-title">שטח ונפח</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../basic_concepts/concentration.he.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>  <span class="chapter-title">ריכוז</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>  <span class="chapter-title">ריכוז</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../basic_concepts/density.he.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>  <span class="chapter-title">צפיפות</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>  <span class="chapter-title">צפיפות</span></span></a>
   </div>
 </li>
       </ul>
@@ -195,11 +241,11 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb">
 <li class="breadcrumb-item"><a href="../basic_concepts/area-and-volume.he.html">מושגי יסוד</a></li>
-<li class="breadcrumb-item"><a href="../basic_concepts/concentration.he.html"><span class="chapter-number">3</span>  <span class="chapter-title">ריכוז</span></a></li>
+<li class="breadcrumb-item"><a href="../basic_concepts/concentration.he.html"><span class="chapter-number">5</span>  <span class="chapter-title">ריכוז</span></a></li>
 </ol></nav><div class="quarto-title">
 <div class="quarto-title-block"><div>
 <h1 class="title">
-<span class="chapter-number">3</span>  <span class="chapter-title">ריכוז</span>
+<span class="chapter-number">5</span>  <span class="chapter-title">ריכוז</span>
 </h1>
 <button type="button" class="btn code-tools-button" id="quarto-code-tools-source" data-quarto-source-url="https://github.com/yairmau/units/blob/main/basic_concepts/concentration.he.qmd"><i class="bi"></i> קוד</button>
 </div></div>
@@ -678,12 +724,12 @@ window.Quarto = {
   });
   </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
       <a href="../basic_concepts/area-and-volume.he.html" class="pagination-link" aria-label="שטח ונפח">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>  <span class="chapter-title">שטח ונפח</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>  <span class="chapter-title">שטח ונפח</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../basic_concepts/density.he.html" class="pagination-link" aria-label="צפיפות">
-        <span class="nav-page-text"><span class="chapter-number">4</span>  <span class="chapter-title">צפיפות</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">6</span>  <span class="chapter-title">צפיפות</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

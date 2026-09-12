@@ -1,2 +1,30 @@
 # Home {.unnumbered}
 
+## goal
+
+My goal is to help first-year university students build some basic skills that are fundamental to an undergraduate degree in the sciences. The main topics here are:
+
+* unit conversion
+* basic dimensional thinking
+* orders of magnitude
+* scientific notation
+* significant figures
+
+These skills help us check calculations, compare quantities, and judge whether an answer makes physical sense. I cannot overstate how useful they are.
+
+This is an ongoing project developed by Yair Mau. The content here has been inspired by my experience teaching introductory physics courses at the Hebrew University of Jerusalem's Rehovot campus.
+
+If you have any comments, corrections, or suggestions, please get in touch through [my website](https://yairmau.com/){target="_blank"}.
+
+## name
+
+The English and Hebrew names for this website are both examples of wordplay inspired by scripture and literature.
+
+* **Measure for Measure**. Shakespeare gave this name to a play in which less-than-perfect characters wrestle with strict laws, justice, and mercy. The title echoes the Sermon on the Mount: the standard by which we judge others will also be applied to us (Matthew 7:2). The play also raises questions of balance and moderation, giving us another way to think about the word *measure*.
+* **אֵיפָה וְאֵיפָה**, Eifa veEifa. The book of Deuteronomy warns us not to keep two different measures, one large and one small (Deuteronomy 25:14). An eifa is a measure of volume, commonly used for grain. Buying with the large measure and selling with the small one would be a way to cheat. Eifa veEifa is therefore an expression used to indicate discrimination, inequity, or double standards.
+
+I do realize that both expressions carry some rather uncomfortable associations. I chose these names because they repeat the same word, and the word being repeated is associated with measurement. However, let me try to lift our spirits beyond thoughts of retributive justice and preferential treatment. These names also offer a useful reminder of why shared standards matter.
+
+The metric system is a product of the Enlightenment and took shape during the French Revolution. Condorcet, Lavoisier, and Laplace (among many others) helped develop a universal system of measurement. The ambition went well beyond making calculations easier: to replace the patchwork of local weights and measures inherited from the feudal order, to derive standards from Nature and not kings, and to promote a shared, global, and borderless language for trade, diplomacy, and science. A standard grounded in the natural world could belong to everyone, rather than depend on the authority of a particular ruler.
+
+The names of this website remind us of what is at stake when measures depend on who is buying, who is selling, or who holds the power. We have inherited something remarkable from these scientists and from those who continued their work over the past two centuries. Let us learn how to use it.

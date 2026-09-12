@@ -10,87 +10,221 @@
     ]
   },
   {
-    "objectID": "intro.html",
-    "href": "intro.en.html",
-    "title": "1  introduction",
+    "objectID": "index.html#goal",
+    "href": "index.en.html#goal",
+    "title": "Measure for Measure",
+    "section": "goal",
+    "text": "goal\nMy goal is to help first-year university students build some basic skills that are fundamental to an undergraduate degree in the sciences. The main topics here are:\n\nunit conversion\nbasic dimensional thinking\norders of magnitude\nscientific notation\nsignificant figures\n\nThese skills help us check calculations, compare quantities, and judge whether an answer makes physical sense. I cannot overstate how useful they are.\nThis is an ongoing project developed by Yair Mau. The content here has been inspired by my experience teaching introductory physics courses at the Hebrew University of Jerusalem’s Rehovot campus.\nIf you have any comments, corrections, or suggestions, please get in touch through my website.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#name",
+    "href": "index.en.html#name",
+    "title": "Measure for Measure",
+    "section": "name",
+    "text": "name\nThe English and Hebrew names for this website are both examples of wordplay inspired by scripture and literature.\n\nMeasure for Measure. Shakespeare gave this name to a play in which less-than-perfect characters wrestle with strict laws, justice, and mercy. The title echoes the Sermon on the Mount: the standard by which we judge others will also be applied to us (Matthew 7:2). The play also raises questions of balance and moderation, giving us another way to think about the word measure.\nאֵיפָה וְאֵיפָה, Eifa veEifa. The book of Deuteronomy warns us not to keep two different measures, one large and one small (Deuteronomy 25:14). An eifa is a measure of volume, commonly used for grain. Buying with the large measure and selling with the small one would be a way to cheat. Eifa veEifa is therefore an expression used to indicate discrimination, inequity, or double standards.\n\nI do realize that both expressions carry some rather uncomfortable associations. I chose these names because they repeat the same word, and the word being repeated is associated with measurement. However, let me try to lift our spirits beyond thoughts of retributive justice and preferential treatment. These names also offer a useful reminder of why shared standards matter.\nThe metric system is a product of the Enlightenment and took shape during the French Revolution. Condorcet, Lavoisier, and Laplace (among many others) helped develop a universal system of measurement. The ambition went well beyond making calculations easier: to replace the patchwork of local weights and measures inherited from the feudal order, to derive standards from Nature and not kings, and to promote a shared, global, and borderless language for trade, diplomacy, and science. A standard grounded in the natural world could belong to everyone, rather than depend on the authority of a particular ruler.\nThe names of this website remind us of what is at stake when measures depend on who is buying, who is selling, or who holds the power. We have inherited something remarkable from these scientists and from those who continued their work over the past two centuries. Let us learn how to use it.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "mathematical_foundations/powers_rules.html",
+    "href": "mathematical_foundations/powers_rules.en.html",
+    "title": "1  power rules",
     "section": "",
-    "text": "1.1 dimensions\nDimensions are physical quantities that describe the nature of a measurement, such as length, time, or mass. Units, on the other hand, are standardized quantities used to express the value of a dimension. For example, “meter”, “inch” and “parsec” are units for the dimension of length.\nThe three fundamental dimensions in mechanics are length, time, and mass. In addition to these, other important dimensions include temperature, electric current, and amount of substance. Each physical quantity can be described in terms of these basic dimensions.\nCommonly used dimensions in science and engineering:",
+    "text": "1.1 product rule\nIt is no surprise that\n100 \\cdot 1000 = 100000.\nUsing power notation, the same can be written as\n10^2 \\cdot 10^3 = 10^{2+3} = 10^5.\nNow we’re getting at something. Generalizing the pattern above, we can write the one important rule we need:",
     "crumbs": [
-      "<span class='chapter-number'>1<\/span>  <span class='chapter-title'>introduction<\/span>"
+      "mathematical foundations",
+      "<span class='chapter-number'>1<\/span>  <span class='chapter-title'>power rules<\/span>"
     ]
   },
   {
-    "objectID": "intro.html#dimensions",
-    "href": "intro.en.html#dimensions",
-    "title": "1  introduction",
+    "objectID": "mathematical_foundations/powers_rules.html#product-rule",
+    "href": "mathematical_foundations/powers_rules.en.html#product-rule",
+    "title": "1  power rules",
     "section": "",
-    "text": "Dimension\nSymbol\nDescription\nSI Unit\n\n\n\n\nLength\nL\ndistance or size\nmeter (m)\n\n\nTime\nT\nduration or interval\nsecond (s)\n\n\nMass\nM\namount of matter\nkilogram (kg)\n\n\nTemperature\nΘ\ndegree of hotness\nkelvin (K)\n\n\nElectric current\nI\nflow of electric charge\nampere (A)\n\n\nAmount of substance\nN\nquantity of entities\nmole (mol)\n\n\nLuminous intensity\nJ\nbrightness\ncandela (cd)",
+    "text": "10^a \\cdot 10^b = 10^{a+b}.",
     "crumbs": [
-      "<span class='chapter-number'>1<\/span>  <span class='chapter-title'>introduction<\/span>"
+      "mathematical foundations",
+      "<span class='chapter-number'>1<\/span>  <span class='chapter-title'>power rules<\/span>"
     ]
   },
   {
-    "objectID": "intro.html#si",
-    "href": "intro.en.html#si",
-    "title": "1  introduction",
-    "section": "1.2 SI",
-    "text": "1.2 SI\nThe SI (Système International d’Unités) is the modern form of the metric system and the most widely used system of measurement for science and engineering. It defines seven base units (meter, kilogram, second, ampere, kelvin, mole, and candela) from which all other units are derived. The SI provides a standardized way to express and compare physical quantities across disciplines and countries.",
+    "objectID": "mathematical_foundations/powers_rules.html#zero-exponent-rule",
+    "href": "mathematical_foundations/powers_rules.en.html#zero-exponent-rule",
+    "title": "1  power rules",
+    "section": "1.2 zero exponent rule",
+    "text": "1.2 zero exponent rule\nFrom the product rule above we can derive all sorts of other useful relationships. Let’s start by taking b=0 in the product rule:\n\n10^a \\cdot 10^0 = 10^{a+0} = 10^{a}.\n\nThe only way to make the product rule true when one of the exponents is zero is to conclude the following:\n\n\n10^0 = 1",
     "crumbs": [
-      "<span class='chapter-number'>1<\/span>  <span class='chapter-title'>introduction<\/span>"
+      "mathematical foundations",
+      "<span class='chapter-number'>1<\/span>  <span class='chapter-title'>power rules<\/span>"
     ]
   },
   {
-    "objectID": "intro.html#prefixes",
-    "href": "intro.en.html#prefixes",
-    "title": "1  introduction",
-    "section": "1.3 prefixes",
-    "text": "1.3 prefixes\nPrefixes are short letter combinations placed before a unit to indicate multiples or fractions of that unit. They make it easier to express very large or very small quantities. The most common prefixes are shown in bold in the table below.\n\n\n\n\n\n\n\n\n\nPrefix\nSymbol\nPower of 10\nCommon Example\n\n\n\n\nyotta\nY\n10^{24}\nYB, yottabyte (computing, data)\n\n\nzetta\nZ\n10^{21}\nZJ, zettajoule (astronomy, energy)\n\n\nexa\nE\n10^{18}\nEW, exawatt (energy, power)\n\n\npeta\nP\n10^{15}\nPB, petabyte (computing, data)**\n\n\ntera\nT\n10^{12}\nTeV, teraelectronvolt (physics, energy)\n\n\ngiga\nG\n10^{9}\nGHz, gigahertz (electronics, frequency)\n\n\nmega\nM\n10^{6}\nMW, megawatt (energy, power)\n\n\nkilo\nk\n10^{3}\nkm, kilometer (geography, length)\n\n\nhecto\nh\n10^{2}\nhPa, hectopascal (meteorology, pressure)\n\n\ndeca\nda\n10^{1}\ndam, decameter (hydrology, length)\n\n\n\n\n10^{0}\nm, meter (SI, length)\n\n\ndeci\nd\n10^{-1}\ndL, deciliter (chemistry, volume)\n\n\ncenti\nc\n10^{-2}\ncm, centimeter (biology, length)\n\n\nmilli\nm\n10^{-3}\nms, millisecond (neuroscience, time)\n\n\nmicro\nµ\n10^{-6}\nµm, micrometer (microscopy, length)\n\n\nnano\nn\n10^{-9}\nnm, nanometer (materials, length)\n\n\npico\np\n10^{-12}\npF, picofarad (electronics, capacitance)\n\n\nfemto\nf\n10^{-15}\nfs, femtosecond (physics, time)\n\n\natto\na\n10^{-18}\nas, attosecond (quantum, time)\n\n\nzepto\nz\n10^{-21}\nzm, zeptometer (physics, length)\n\n\nyocto\ny\n10^{-24}\nyg, yoctogram (chemistry, mass)",
+    "objectID": "mathematical_foundations/powers_rules.html#negative-exponent-rule",
+    "href": "mathematical_foundations/powers_rules.en.html#negative-exponent-rule",
+    "title": "1  power rules",
+    "section": "1.3 negative exponent rule",
+    "text": "1.3 negative exponent rule\nWhat happens if one of the exponents is negative? For example, let’s substitute b=-a in the product rule:\n\n10^a \\cdot 10^{-a} = 10^{a-a} = 10^0 = 1.\n\nIf we divide both sides of the equation above by 10^a we get\n\n\n10^{-a} = \\frac{1}{10^a}.\n\n\nWe’ve found that negative powers are related to reciprocals. (1/x is called the reciprocal of x)",
     "crumbs": [
-      "<span class='chapter-number'>1<\/span>  <span class='chapter-title'>introduction<\/span>"
+      "mathematical foundations",
+      "<span class='chapter-number'>1<\/span>  <span class='chapter-title'>power rules<\/span>"
+    ]
+  },
+  {
+    "objectID": "mathematical_foundations/powers_rules.html#quotient-rule",
+    "href": "mathematical_foundations/powers_rules.en.html#quotient-rule",
+    "title": "1  power rules",
+    "section": "1.4 quotient rule",
+    "text": "1.4 quotient rule\nNow that we know how to deal with negative exponents, we can deal with a power divided by another power:\n\n10^a \\div 10^b = 10^a \\cdot \\frac{1}{10^b} = 10^a \\cdot 10^{-b} = 10^{a-b},\n\nor in short\n\n\n10^a \\div 10^b = 10^{a-b}.",
+    "crumbs": [
+      "mathematical foundations",
+      "<span class='chapter-number'>1<\/span>  <span class='chapter-title'>power rules<\/span>"
+    ]
+  },
+  {
+    "objectID": "mathematical_foundations/powers_rules.html#power-of-a-power-rule",
+    "href": "mathematical_foundations/powers_rules.en.html#power-of-a-power-rule",
+    "title": "1  power rules",
+    "section": "1.5 power of a power rule",
+    "text": "1.5 power of a power rule\nWhat happens when we raise a power to another power?\n\n(10^a)^b\n=\\underbrace{10^a\\cdot10^a\\cdots10^a}_{b\\text{ factors}}\n=10^{\\overbrace{a+a+\\cdots+a}^{b\\text{ terms}}}\n=10^{ab}.\n\nSo, in short:\n\n\n(10^a)^b = 10^{ab}.",
+    "crumbs": [
+      "mathematical foundations",
+      "<span class='chapter-number'>1<\/span>  <span class='chapter-title'>power rules<\/span>"
+    ]
+  },
+  {
+    "objectID": "mathematical_foundations/powers_rules.html#fractional-exponent-rule",
+    "href": "mathematical_foundations/powers_rules.en.html#fractional-exponent-rule",
+    "title": "1  power rules",
+    "section": "1.6 fractional exponent rule",
+    "text": "1.6 fractional exponent rule\nWhat should a fractional exponent mean? Start with 10^{1/2}. Using the power-of-a-power rule:\n\n(10^{1/2})^2=10^{\\frac{1}{2}\\cdot 2} = 10.\n\nWe don’t really want the square of 10^{1/2}, so how to undo the squaring operation? We take the square root, \\sqrt[2]{\\,\\,}. So we’ve learned that 10^{1/2}=\\sqrt[2]{10}.\nThe same reasoning works for any fraction a/b (given that b is positive):\n\n(10^{a/b})^b = 10^{\\frac{a}{b}\\cdot b} = 10^a.\n\nTo undo the exponentiation by b, we take the bth root (\\sqrt[b]{\\,\\,}) of the equation above:\n\n\n10^{a/b} = \\sqrt[b]{10^a}.",
+    "crumbs": [
+      "mathematical foundations",
+      "<span class='chapter-number'>1<\/span>  <span class='chapter-title'>power rules<\/span>"
+    ]
+  },
+  {
+    "objectID": "mathematical_foundations/powers_rules.html#the-power-10",
+    "href": "mathematical_foundations/powers_rules.en.html#the-power-10",
+    "title": "1  power rules",
+    "section": "1.7 the power 10",
+    "text": "1.7 the power 10\nWe used the base 10 in all the rules above, but there’s nothing sacred about it, we could have chosen any other number. Mastering how to work with powers of 10 will be extremely useful in the other chapters of this website, so that’s why you see it here.",
+    "crumbs": [
+      "mathematical foundations",
+      "<span class='chapter-number'>1<\/span>  <span class='chapter-title'>power rules<\/span>"
+    ]
+  },
+  {
+    "objectID": "mathematical_foundations/powers_rules.html#power-of-a-product-quotient",
+    "href": "mathematical_foundations/powers_rules.en.html#power-of-a-product-quotient",
+    "title": "1  power rules",
+    "section": "1.8 power of a product / quotient",
+    "text": "1.8 power of a product / quotient\nSo far, we have kept the base fixed at 10 and explored how exponents combine. Now let’s look inside the base: what happens when we raise a product or a quotient to a power? The same idea, repeated multiplication, gives us two more rules.\nTake, for instance\n\n(ab)^3\n=(ab)(ab)(ab)\n=(aaa)(bbb)\n=a^3b^3.\n\nEach factor contributes one a and one b. If instead of 3 we had c factors, we get c copies of each:\n\n\n(ab)^c = a^c b^c.\n\n\nThe quotient rule follows immediately by writing division as multiplication by a reciprocal:\n\n\\left(\\frac ab\\right)^c\n=(ab^{-1})^c\n=a^c(b^{-1})^c\n=a^cb^{-c}\n=\\frac{a^c}{b^c},\n\n… so in short,\n\n\n\\left(\\frac ab\\right)^c = \\frac{a^c}{b^c}.",
+    "crumbs": [
+      "mathematical foundations",
+      "<span class='chapter-number'>1<\/span>  <span class='chapter-title'>power rules<\/span>"
+    ]
+  },
+  {
+    "objectID": "mathematical_foundations/powers_rules.html#repeated-multiplication",
+    "href": "mathematical_foundations/powers_rules.en.html#repeated-multiplication",
+    "title": "1  power rules",
+    "section": "1.9 repeated multiplication",
+    "text": "1.9 repeated multiplication\nWe started this chapter with repeated multiplication: for a positive integer n, 10^n means a product of n factors of 10. This gives us the product rule:\n\n10^a \\cdot 10^b = 10^{a+b}.\n\nBut what should 10^{-2} or 10^{3/2} mean? We can’t literally write a product containing -2 or 3/2 factors. Instead, we use the product rule as our guide. We define powers with zero, negative, and fractional exponents so that the rule keeps working. As we’ve seen, this leads us to 10^0=1, negative powers as reciprocals, and fractional powers as roots. Repeated multiplication gets us started, and preserving the rule takes us further.",
+    "crumbs": [
+      "mathematical foundations",
+      "<span class='chapter-number'>1<\/span>  <span class='chapter-title'>power rules<\/span>"
+    ]
+  },
+  {
+    "objectID": "mathematical_foundations/powers_rules.html#to-sum-up",
+    "href": "mathematical_foundations/powers_rules.en.html#to-sum-up",
+    "title": "1  power rules",
+    "section": "1.10 to sum up",
+    "text": "1.10 to sum up\n\\begin{align}\n10^a \\cdot 10^b &= 10^{a+b} \\\\\n10^0 &= 1 \\\\\n10^{-a} &= \\frac{1}{10^a} \\\\\n10^a \\div 10^b &= 10^{a-b} \\\\\n(10^a)^b &= 10^{ab} \\\\\n10^{a/b} &= \\sqrt[b]{10^a} \\\\\n(ab)^c &= a^c b^c \\\\\n\\left(\\frac ab\\right)^c &= \\frac{a^c}{b^c}\n\\end{align}",
+    "crumbs": [
+      "mathematical foundations",
+      "<span class='chapter-number'>1<\/span>  <span class='chapter-title'>power rules<\/span>"
+    ]
+  },
+  {
+    "objectID": "quantifying/dimensions.html",
+    "href": "quantifying/dimensions.en.html",
+    "title": "2  dimensions",
+    "section": "",
+    "text": "Dimensions are physical quantities that describe the nature of a measurement, such as length, time, or mass. Units, on the other hand, are standardized quantities used to express the value of a dimension. For example, “meter”, “inch” and “parsec” are units for the dimension of length.\nThe three fundamental dimensions in mechanics are length, time, and mass. In addition to these, other important dimensions include temperature, electric current, and amount of substance. Each physical quantity can be described in terms of these basic dimensions.\nCommonly used dimensions in science and engineering:\n\n\n\n\n\n\n\n\n\nDimension\nSymbol\nDescription\nSI Unit\n\n\n\n\nLength\nL\ndistance or size\nmeter (m)\n\n\nTime\nT\nduration or interval\nsecond (s)\n\n\nMass\nM\namount of matter\nkilogram (kg)\n\n\nTemperature\nΘ\ndegree of hotness\nkelvin (K)\n\n\nElectric current\nI\nflow of electric charge\nampere (A)\n\n\nAmount of substance\nN\nquantity of entities\nmole (mol)\n\n\nLuminous intensity\nJ\nbrightness\ncandela (cd)",
+    "crumbs": [
+      "quantifying the world",
+      "<span class='chapter-number'>2<\/span>  <span class='chapter-title'>dimensions<\/span>"
+    ]
+  },
+  {
+    "objectID": "quantifying/units.html",
+    "href": "quantifying/units.en.html",
+    "title": "3  units",
+    "section": "",
+    "text": "3.1 SI\nThe SI (Système International d’Unités) is the modern form of the metric system and the most widely used system of measurement for science and engineering. It defines seven base units (meter, kilogram, second, ampere, kelvin, mole, and candela) from which all other units are derived. The SI provides a standardized way to express and compare physical quantities across disciplines and countries.",
+    "crumbs": [
+      "quantifying the world",
+      "<span class='chapter-number'>3<\/span>  <span class='chapter-title'>units<\/span>"
+    ]
+  },
+  {
+    "objectID": "quantifying/units.html#prefixes",
+    "href": "quantifying/units.en.html#prefixes",
+    "title": "3  units",
+    "section": "3.2 prefixes",
+    "text": "3.2 prefixes\nPrefixes are short letter combinations placed before a unit to indicate multiples or fractions of that unit. They make it easier to express very large or very small quantities. The most common prefixes are shown in bold in the table below.\n\n\n\n\n\n\n\n\n\nPrefix\nSymbol\nPower of 10\nCommon Example\n\n\n\n\nyotta\nY\n10^{24}\nYB, yottabyte (computing, data)\n\n\nzetta\nZ\n10^{21}\nZJ, zettajoule (astronomy, energy)\n\n\nexa\nE\n10^{18}\nEW, exawatt (energy, power)\n\n\npeta\nP\n10^{15}\nPB, petabyte (computing, data)**\n\n\ntera\nT\n10^{12}\nTeV, teraelectronvolt (physics, energy)\n\n\ngiga\nG\n10^{9}\nGHz, gigahertz (electronics, frequency)\n\n\nmega\nM\n10^{6}\nMW, megawatt (energy, power)\n\n\nkilo\nk\n10^{3}\nkm, kilometer (geography, length)\n\n\nhecto\nh\n10^{2}\nhPa, hectopascal (meteorology, pressure)\n\n\ndeca\nda\n10^{1}\ndam, decameter (hydrology, length)\n\n\n\n\n10^{0}\nm, meter (SI, length)\n\n\ndeci\nd\n10^{-1}\ndL, deciliter (chemistry, volume)\n\n\ncenti\nc\n10^{-2}\ncm, centimeter (biology, length)\n\n\nmilli\nm\n10^{-3}\nms, millisecond (neuroscience, time)\n\n\nmicro\nµ\n10^{-6}\nµm, micrometer (microscopy, length)\n\n\nnano\nn\n10^{-9}\nnm, nanometer (materials, length)\n\n\npico\np\n10^{-12}\npF, picofarad (electronics, capacitance)\n\n\nfemto\nf\n10^{-15}\nfs, femtosecond (physics, time)\n\n\natto\na\n10^{-18}\nas, attosecond (quantum, time)\n\n\nzepto\nz\n10^{-21}\nzm, zeptometer (physics, length)\n\n\nyocto\ny\n10^{-24}\nyg, yoctogram (chemistry, mass)",
+    "crumbs": [
+      "quantifying the world",
+      "<span class='chapter-number'>3<\/span>  <span class='chapter-title'>units<\/span>"
     ]
   },
   {
     "objectID": "basic_concepts/area-and-volume.html",
     "href": "basic_concepts/area-and-volume.en.html",
-    "title": "2  area and volume",
+    "title": "4  area and volume",
     "section": "",
     "text": "liter\nAreas have the dimension of length squared (L^2), and volumes have the dimension of length cubed (L^3).\nAttention!\nWhen converting units of area or volume, don’t forget to square or cube the prefixes. Huh?\nLet me give an example.\n1\\, \\mathrm{km}^2 = 1 \\left( 10^3 \\mathrm{m} \\right)^2 = 1 \\left( 10^3 \\right)^2 \\left(\\mathrm{m} \\right)^2 = 10^6\\, \\mathrm{m}^2\nThere are a million square meters in a square kilometers.\nOne liter is the volume of a cube of side 10 cm.\n1\\, \\mathrm{m}^3 = (100\\, \\mathrm{cm})^3 = \\left(10 \\cdot 10\\, \\mathrm{cm}\\right)^3 = 10^3\\left(10\\, \\mathrm{cm}\\right)^3 = 10^3\\, \\mathrm{L}\nThere are a thousand liters in a cubic meter.",
     "crumbs": [
       "basic concepts",
-      "<span class='chapter-number'>2<\/span>  <span class='chapter-title'>area and volume<\/span>"
+      "<span class='chapter-number'>4<\/span>  <span class='chapter-title'>area and volume<\/span>"
     ]
   },
   {
     "objectID": "basic_concepts/area-and-volume.html#liter",
     "href": "basic_concepts/area-and-volume.en.html#liter",
-    "title": "2  area and volume",
+    "title": "4  area and volume",
     "section": "",
     "text": "How many liters are in a cubic meter?",
     "crumbs": [
       "basic concepts",
-      "<span class='chapter-number'>2<\/span>  <span class='chapter-title'>area and volume<\/span>"
+      "<span class='chapter-number'>4<\/span>  <span class='chapter-title'>area and volume<\/span>"
     ]
   },
   {
     "objectID": "basic_concepts/concentration.html",
     "href": "basic_concepts/concentration.en.html",
-    "title": "3  concentration",
+    "title": "5  concentration",
     "section": "",
     "text": "Concentrations basically answer the question:\n\nHow much of something is there in a given volume?\n\n\n\n\nConcentrations are very commonly used in chemistry. The quantities can be moles, grams, milligrams, etc. The volumes can be liters, milliliters, etc. A few examples:\n\nconcentration of a given medical compound: 2 \\mug/mL\nconcentration of a reagent: 0.5 mol/L",
     "crumbs": [
       "basic concepts",
-      "<span class='chapter-number'>3<\/span>  <span class='chapter-title'>concentration<\/span>"
+      "<span class='chapter-number'>5<\/span>  <span class='chapter-title'>concentration<\/span>"
     ]
   },
   {
     "objectID": "basic_concepts/density.html",
     "href": "basic_concepts/density.en.html",
-    "title": "4  density",
+    "title": "6  density",
     "section": "",
     "text": "There are several flavors of densities, but usually we mean mass density:\n\nHow much mass is there in a given volume?\n\nFor instance, the density of iron is 7.87 g/cm^3\n\nWhat is the density of iron in kg/m^3?\n\n\\begin{align}\n&7.87\\, &&\\mathrm{g}&&\\mathrm{cm}^{-3} \\\\\n&7.87\\, &&\\left(10^{-3}10^3\\,\\mathrm{g}\\right) &&(10^{-2}\\,\\mathrm{m})^{-3}\\\\\n&7.87\\, &&\\left(10^{-3}\\,\\mathrm{kg}\\right) &&(10^{-2})^{-3}\\, (\\mathrm{m})^{-3}\\\\\n&7.87\\, &&10^{-3}\\, \\mathrm{kg} &&10^{6}\\, \\mathrm{m}^{-3}\\\\\n&7.87\\cdot10^{-3}10^{6} &&\\mathrm{kg} &&\\mathrm{m}^{-3}\\\\\n&7.87\\cdot10^{3} &&\\mathrm{kg} &&\\mathrm{m}^{-3}\\\\\n\\end{align}\nThere are 7870 kg of iron in a cubic meter.\nMake sure you are comfortable with what’s going on in each of the equations above.",
     "crumbs": [
       "basic concepts",
-      "<span class='chapter-number'>4<\/span>  <span class='chapter-title'>density<\/span>"
+      "<span class='chapter-number'>6<\/span>  <span class='chapter-title'>density<\/span>"
     ]
   }
 ]

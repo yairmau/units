@@ -1,1 +1,14 @@
 <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const button = document.querySelector(".quarto-secondary-nav .quarto-btn-toggle");
+  if (!button) return;
+  const hebrew = document.documentElement.lang.startsWith("he");
+  const label = document.createElement("span");
+  label.className = "chapter-menu-label";
+  label.textContent = hebrew ? "פרקים" : "Chapters";
+  button.append(label);
+  button.setAttribute("aria-label", label.textContent);
+  button.querySelector("i")?.setAttribute("aria-hidden", "true");
+});
+</script>

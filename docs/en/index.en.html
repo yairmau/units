@@ -26,7 +26,7 @@ ul.task-list li input[type="checkbox"] {
 }
 </style>
 <script src="site_libs/quarto-nav/quarto-nav.js"></script><script src="site_libs/quarto-nav/headroom.min.js"></script><script src="site_libs/clipboard/clipboard.min.js"></script><script src="site_libs/quarto-search/autocomplete.umd.js"></script><script src="site_libs/quarto-search/fuse.min.js"></script><script src="site_libs/quarto-search/quarto-search.js"></script><meta name="quarto:offset" content="./">
-<link href="./intro.en.html" rel="next">
+<link href="./mathematical_foundations/powers_rules.en.html" rel="next">
 <link href="./archive/logo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script><script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="site_libs/quarto-html/popper.min.js"></script><script src="site_libs/quarto-html/tippy.umd.min.js"></script><script src="site_libs/quarto-html/anchor.min.js"></script><link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-e3574cce5e3fde4ed97df547c7360872.css" rel="stylesheet" id="quarto-text-highlighting-styles">
@@ -59,7 +59,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script><link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-<link rel="stylesheet" href="hebrew.css">
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const button = document.querySelector(".quarto-secondary-nav .quarto-btn-toggle");
+  if (!button) return;
+  const hebrew = document.documentElement.lang.startsWith("he");
+  const label = document.createElement("span");
+  label.className = "chapter-menu-label";
+  label.textContent = hebrew ? "פרקים" : "Chapters";
+  button.append(label);
+  button.setAttribute("aria-label", label.textContent);
+  button.querySelector("i")?.setAttribute("aria-hidden", "true");
+});
+</script><link rel="stylesheet" href="hebrew.css">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body class="nav-sidebar floating quarto-light">
@@ -104,16 +116,10 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Home</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./intro.en.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>  <span class="chapter-title">introduction</span></span></a>
-  </div>
-</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">basic concepts</span></a>
+ <span class="menu-text">mathematical foundations</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -121,20 +127,60 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./mathematical_foundations/powers_rules.en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>  <span class="chapter-title">power rules</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">quantifying the world</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./quantifying/dimensions.en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>  <span class="chapter-title">dimensions</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./quantifying/units.en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>  <span class="chapter-title">units</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">basic concepts</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./basic_concepts/area-and-volume.en.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>  <span class="chapter-title">area and volume</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>  <span class="chapter-title">area and volume</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./basic_concepts/concentration.en.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>  <span class="chapter-title">concentration</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>  <span class="chapter-title">concentration</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./basic_concepts/density.en.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>  <span class="chapter-title">density</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>  <span class="chapter-title">density</span></span></a>
   </div>
 </li>
       </ul>
@@ -147,7 +193,13 @@ ul.task-list li input[type="checkbox"] {
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
    
   <ul>
-<li><a href="#home" id="toc-home" class="nav-link active" data-scroll-target="#home">Home</a></li>
+<li>
+<a href="#home" id="toc-home" class="nav-link active" data-scroll-target="#home">Home</a>
+  <ul class="collapse">
+<li><a href="#goal" id="toc-goal" class="nav-link" data-scroll-target="#goal">goal</a></li>
+  <li><a href="#name" id="toc-name" class="nav-link" data-scroll-target="#name">name</a></li>
+  </ul>
+</li>
   </ul></nav>
 </div>
 <!-- main -->
@@ -177,9 +229,32 @@ ul.task-list li input[type="checkbox"] {
 
 
 </header><section id="home" class="level1 unnumbered"><h1 class="unnumbered">Home</h1>
+<section id="goal" class="level2"><h2 class="anchored" data-anchor-id="goal">goal</h2>
+<p>My goal is to help first-year university students build some basic skills that are fundamental to an undergraduate degree in the sciences. The main topics here are:</p>
+<ul>
+<li>unit conversion</li>
+<li>basic dimensional thinking</li>
+<li>orders of magnitude</li>
+<li>scientific notation</li>
+<li>significant figures</li>
+</ul>
+<p>These skills help us check calculations, compare quantities, and judge whether an answer makes physical sense. I cannot overstate how useful they are.</p>
+<p>This is an ongoing project developed by Yair Mau. The content here has been inspired by my experience teaching introductory physics courses at the Hebrew University of Jerusalem’s Rehovot campus.</p>
+<p>If you have any comments, corrections, or suggestions, please get in touch through <a href="https://yairmau.com/" target="_blank">my website</a>.</p>
+</section><section id="name" class="level2"><h2 class="anchored" data-anchor-id="name">name</h2>
+<p>The English and Hebrew names for this website are both examples of wordplay inspired by scripture and literature.</p>
+<ul>
+<li>
+<strong>Measure for Measure</strong>. Shakespeare gave this name to a play in which less-than-perfect characters wrestle with strict laws, justice, and mercy. The title echoes the Sermon on the Mount: the standard by which we judge others will also be applied to us (Matthew 7:2). The play also raises questions of balance and moderation, giving us another way to think about the word <em>measure</em>.</li>
+<li>
+<strong>אֵיפָה וְאֵיפָה</strong>, Eifa veEifa. The book of Deuteronomy warns us not to keep two different measures, one large and one small (Deuteronomy 25:14). An eifa is a measure of volume, commonly used for grain. Buying with the large measure and selling with the small one would be a way to cheat. Eifa veEifa is therefore an expression used to indicate discrimination, inequity, or double standards.</li>
+</ul>
+<p>I do realize that both expressions carry some rather uncomfortable associations. I chose these names because they repeat the same word, and the word being repeated is associated with measurement. However, let me try to lift our spirits beyond thoughts of retributive justice and preferential treatment. These names also offer a useful reminder of why shared standards matter.</p>
+<p>The metric system is a product of the Enlightenment and took shape during the French Revolution. Condorcet, Lavoisier, and Laplace (among many others) helped develop a universal system of measurement. The ambition went well beyond making calculations easier: to replace the patchwork of local weights and measures inherited from the feudal order, to derive standards from Nature and not kings, and to promote a shared, global, and borderless language for trade, diplomacy, and science. A standard grounded in the natural world could belong to everyone, rather than depend on the authority of a particular ruler.</p>
+<p>The names of this website remind us of what is at stake when measures depend on who is buying, who is selling, or who holds the power. We have inherited something remarkable from these scientists and from those who continued their work over the past two centuries. Let us learn how to use it.</p>
 
 
-</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
@@ -632,8 +707,8 @@ ul.task-list li input[type="checkbox"] {
   </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./intro.en.html" class="pagination-link" aria-label="introduction">
-        <span class="nav-page-text"><span class="chapter-number">1</span>  <span class="chapter-title">introduction</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./mathematical_foundations/powers_rules.en.html" class="pagination-link" aria-label="power rules">
+        <span class="nav-page-text"><span class="chapter-number">1</span>  <span class="chapter-title">power rules</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

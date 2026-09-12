@@ -56,3 +56,69 @@
 .curved-paper img:not([height]) {
   height: auto;
 }
+
+/* Mobile chapter navigation: Quarto controls aria-expanded and the sidebar. */
+.quarto-secondary-nav .quarto-btn-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 44px;
+  min-height: 44px;
+  flex-shrink: 0;
+}
+
+.chapter-menu-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.quarto-secondary-nav .quarto-btn-toggle > i {
+  position: relative;
+  display: block;
+  flex: 0 0 22px;
+  width: 22px;
+  height: 18px;
+  background: linear-gradient(currentColor, currentColor) center / 100% 2px no-repeat;
+  transition: background-size 160ms ease;
+}
+
+.quarto-secondary-nav .quarto-btn-toggle > i::before,
+.quarto-secondary-nav .quarto-btn-toggle > i::after {
+  content: "";
+  position: absolute;
+  display: block;
+  inset-inline-start: 0;
+  top: 8px;
+  width: 22px;
+  height: 2px;
+  background: currentColor;
+  transition: transform 160ms ease;
+}
+
+.quarto-secondary-nav .quarto-btn-toggle > i::before {
+  transform: translateY(-7px);
+}
+
+.quarto-secondary-nav .quarto-btn-toggle > i::after {
+  transform: translateY(7px);
+}
+
+.quarto-secondary-nav .quarto-btn-toggle[aria-expanded="true"] > i {
+  background-size: 0% 2px;
+}
+
+.quarto-secondary-nav .quarto-btn-toggle[aria-expanded="true"] > i::before {
+  transform: rotate(45deg);
+}
+
+.quarto-secondary-nav .quarto-btn-toggle[aria-expanded="true"] > i::after {
+  transform: rotate(-45deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .quarto-secondary-nav .quarto-btn-toggle > i,
+  .quarto-secondary-nav .quarto-btn-toggle > i::before,
+  .quarto-secondary-nav .quarto-btn-toggle > i::after {
+    transition: none;
+  }
+}

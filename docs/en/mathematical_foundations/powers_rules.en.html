@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="he" xml:lang="he" dir="rtl">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="alternate" hreflang="en" href="https://yairmau.github.io/units/en/index.en.html">
-<link rel="alternate" hreflang="he" href="https://yairmau.github.io/units/he/index.he.html">
+<link rel="alternate" hreflang="en" href="https://yairmau.github.io/units/en/mathematical_foundations/powers_rules.en.html">
+<link rel="alternate" hreflang="he" href="https://yairmau.github.io/units/he/mathematical_foundations/powers_rules.he.html">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.9.36">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="author" content="Yair Mau">
-<title>אֵיפָה וְאֵיפָה</title>
+<title>1  power rules – Measure for Measure</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -25,13 +24,14 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
-<script src="site_libs/quarto-nav/quarto-nav.js"></script><script src="site_libs/quarto-nav/headroom.min.js"></script><script src="site_libs/clipboard/clipboard.min.js"></script><script src="site_libs/quarto-search/autocomplete.umd.js"></script><script src="site_libs/quarto-search/fuse.min.js"></script><script src="site_libs/quarto-search/quarto-search.js"></script><meta name="quarto:offset" content="./">
-<link href="./mathematical_foundations/powers_rules.he.html" rel="next">
-<link href="./archive/logo.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script><script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="site_libs/quarto-html/popper.min.js"></script><script src="site_libs/quarto-html/tippy.umd.min.js"></script><script src="site_libs/quarto-html/anchor.min.js"></script><link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e3574cce5e3fde4ed97df547c7360872.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script><link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-54cc5f61f87fd151f88f457a17120cd6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script><script src="../site_libs/quarto-nav/headroom.min.js"></script><script src="../site_libs/clipboard/clipboard.min.js"></script><script src="../site_libs/quarto-search/autocomplete.umd.js"></script><script src="../site_libs/quarto-search/fuse.min.js"></script><script src="../site_libs/quarto-search/quarto-search.js"></script><meta name="quarto:offset" content="../">
+<link href="../quantifying/dimensions.en.html" rel="next">
+<link href="../index.en.html" rel="prev">
+<link href="../archive/logo.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script><script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="../site_libs/quarto-html/popper.min.js"></script><script src="../site_libs/quarto-html/tippy.umd.min.js"></script><script src="../site_libs/quarto-html/anchor.min.js"></script><link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e3574cce5e3fde4ed97df547c7360872.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script><link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-54cc5f61f87fd151f88f457a17120cd6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -46,17 +46,17 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "אין תוצאות",
-    "search-matching-documents-text": "מסמכים תואמים",
-    "search-copy-link-title": "העתק קישור לחיפוש",
-    "search-hide-matches-text": "הסתר התאמות נוספות",
-    "search-more-match-text": "התאמה נוספת במסמך זה",
-    "search-more-matches-text": "התאמות נוספות במסמך זה",
-    "search-clear-button-title": "נקה",
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "בטל",
-    "search-submit-button-title": "שלח",
-    "search-label": "חפש"
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script><link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 <script>
@@ -71,64 +71,106 @@ document.addEventListener("DOMContentLoaded", () => {
   button.setAttribute("aria-label", label.textContent);
   button.querySelector("i")?.setAttribute("aria-hidden", "true");
 });
-</script><link rel="stylesheet" href="hebrew.css">
-<link rel="stylesheet" href="styles.css">
+</script><script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script><script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script><script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script><link rel="stylesheet" href="../hebrew.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 <body class="nav-sidebar floating quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="הצג/הסתר את סרגל הניווט" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.he.html">דף הבית</a></li></ol></nav><a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="הצג/הסתר את סרגל הניווט" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="../mathematical_foundations/powers_rules.en.html">mathematical foundations</a></li>
+<li class="breadcrumb-item"><a href="../mathematical_foundations/powers_rules.en.html"><span class="chapter-number">1</span>  <span class="chapter-title">power rules</span></a></li>
+</ol></nav><a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="חפש" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
   </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="./index.html" class="sidebar-logo-link">
-      <img src="./archive/logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none"><img src="./archive/logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none"></a>
+      <a href="../index.en.html" class="sidebar-logo-link">
+      <img src="../archive/logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none"><img src="../archive/logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none"></a>
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">אֵיפָה וְאֵיפָה</a> 
+      <a href="../">Measure for Measure</a> 
         <div class="sidebar-tools-main">
     <a href="https://yairmau.com/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-house-fill"></i></a>
-    <a href="https://github.com/yairmau/units/" title="קוד מקור" class="quarto-navigation-tool px-1" aria-label="קוד מקור"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/yairmau/units/" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
 </div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
-        <div id="quarto-search" class="" title="חפש"></div>
+        <div id="quarto-search" class="" title="Search"></div>
         </div>
         </div>
     <div class="dropdown" id="languages-links-parent">
-<a class="btn btn-primary babelquarto-languages-button" id="languages-button" href="https://yairmau.github.io/units/en/index.en.html" hreflang="en"><i class="bi bi-globe2"></i> :English</a>
+<a class="btn btn-primary babelquarto-languages-button" id="languages-button" href="https://yairmau.github.io/units/he/mathematical_foundations/powers_rules.he.html" hreflang="he"><i class="bi bi-globe2"></i> :עברית</a>
 </div>
 <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.he.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">דף הבית</span></a>
+  <a href="../index.en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">יסודות מתמטיים</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="הצג/הסתר מקטע">
+ <span class="menu-text">mathematical foundations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./mathematical_foundations/powers_rules.he.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>  <span class="chapter-title">חוקי חזקות</span></span></a>
+  <a href="../mathematical_foundations/powers_rules.en.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>  <span class="chapter-title">power rules</span></span></a>
   </div>
 </li>
       </ul>
@@ -136,22 +178,22 @@ document.addEventListener("DOMContentLoaded", () => {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">לכמת את העולם</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="הצג/הסתר מקטע">
+ <span class="menu-text">quantifying the world</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./quantifying/dimensions.he.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>  <span class="chapter-title">ממדים</span></span></a>
+  <a href="../quantifying/dimensions.en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>  <span class="chapter-title">dimensions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./quantifying/units.he.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>  <span class="chapter-title">יחידות</span></span></a>
+  <a href="../quantifying/units.en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>  <span class="chapter-title">units</span></span></a>
   </div>
 </li>
       </ul>
@@ -159,72 +201,69 @@ document.addEventListener("DOMContentLoaded", () => {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">מושגי יסוד</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="הצג/הסתר מקטע">
+ <span class="menu-text">basic concepts</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basic_concepts/area-and-volume.he.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>  <span class="chapter-title">שטח ונפח</span></span></a>
+  <a href="../basic_concepts/area-and-volume.en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>  <span class="chapter-title">area and volume</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basic_concepts/concentration.he.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>  <span class="chapter-title">ריכוז</span></span></a>
+  <a href="../basic_concepts/concentration.en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>  <span class="chapter-title">concentration</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basic_concepts/density.he.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>  <span class="chapter-title">צפיפות</span></span></a>
+  <a href="../basic_concepts/density.en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>  <span class="chapter-title">density</span></span></a>
   </div>
 </li>
       </ul>
 </li>
-        <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">נספחים</span></span>
-  </li>
     </ul>
 </div>
 </nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">תוכן עניינים</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
    
   <ul>
-<li>
-<a href="#%D7%93%D7%A3-%D7%94%D7%91%D7%99%D7%AA" id="toc-דף-הבית" class="nav-link active" data-scroll-target="#דף-הבית">דף הבית</a>
-  <ul class="collapse">
-<li><a href="#%D7%9E%D7%98%D7%A8%D7%94" id="toc-מטרה" class="nav-link" data-scroll-target="#מטרה">מטרה</a></li>
-  <li><a href="#%D7%A9%D7%9D" id="toc-שם" class="nav-link" data-scroll-target="#שם">שם</a></li>
-  </ul>
-</li>
+<li><a href="#product-rule" id="toc-product-rule" class="nav-link active" data-scroll-target="#product-rule"><span class="header-section-number">1.1</span> product rule</a></li>
+  <li><a href="#zero-exponent-rule" id="toc-zero-exponent-rule" class="nav-link" data-scroll-target="#zero-exponent-rule"><span class="header-section-number">1.2</span> zero exponent rule</a></li>
+  <li><a href="#negative-exponent-rule" id="toc-negative-exponent-rule" class="nav-link" data-scroll-target="#negative-exponent-rule"><span class="header-section-number">1.3</span> negative exponent rule</a></li>
+  <li><a href="#quotient-rule" id="toc-quotient-rule" class="nav-link" data-scroll-target="#quotient-rule"><span class="header-section-number">1.4</span> quotient rule</a></li>
+  <li><a href="#power-of-a-power-rule" id="toc-power-of-a-power-rule" class="nav-link" data-scroll-target="#power-of-a-power-rule"><span class="header-section-number">1.5</span> power of a power rule</a></li>
+  <li><a href="#fractional-exponent-rule" id="toc-fractional-exponent-rule" class="nav-link" data-scroll-target="#fractional-exponent-rule"><span class="header-section-number">1.6</span> fractional exponent rule</a></li>
+  <li><a href="#the-power-10" id="toc-the-power-10" class="nav-link" data-scroll-target="#the-power-10"><span class="header-section-number">1.7</span> the power <span class="math inline">10</span></a></li>
+  <li><a href="#power-of-a-product-quotient" id="toc-power-of-a-product-quotient" class="nav-link" data-scroll-target="#power-of-a-product-quotient"><span class="header-section-number">1.8</span> power of a product / quotient</a></li>
+  <li><a href="#repeated-multiplication" id="toc-repeated-multiplication" class="nav-link" data-scroll-target="#repeated-multiplication"><span class="header-section-number">1.9</span> repeated multiplication</a></li>
+  <li><a href="#to-sum-up" id="toc-to-sum-up" class="nav-link" data-scroll-target="#to-sum-up"><span class="header-section-number">1.10</span> to sum up</a></li>
   </ul></nav>
 </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="../mathematical_foundations/powers_rules.en.html">mathematical foundations</a></li>
+<li class="breadcrumb-item"><a href="../mathematical_foundations/powers_rules.en.html"><span class="chapter-number">1</span>  <span class="chapter-title">power rules</span></a></li>
+</ol></nav><div class="quarto-title">
 <div class="quarto-title-block"><div>
-<h1 class="title">אֵיפָה וְאֵיפָה</h1>
-<button type="button" class="btn code-tools-button" id="quarto-code-tools-source" data-quarto-source-url="https://github.com/yairmau/units/blob/main/index.he.qmd"><i class="bi"></i> קוד</button>
+<h1 class="title">
+<span class="chapter-number">1</span>  <span class="chapter-title">power rules</span>
+</h1>
+<button type="button" class="btn code-tools-button" id="quarto-code-tools-source" data-quarto-source-url="https://github.com/yairmau/units/blob/main/mathematical_foundations/powers_rules.en.qmd"><i class="bi"></i> Code</button>
 </div></div>
-<p class="subtitle lead">ממדים, יחידות וסדרי גודל</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">כותב</div>
-    <div class="quarto-title-meta-contents">
-             <p>Yair Mau </p>
-          </div>
-  </div>
     
   
     
@@ -232,33 +271,147 @@ document.addEventListener("DOMContentLoaded", () => {
   
 
 
-</header><section id="דף-הבית" class="level1 unnumbered"><h1 class="unnumbered">דף הבית</h1>
-<section id="מטרה" class="level2"><h2 class="anchored" data-anchor-id="מטרה">מטרה</h2>
-<p>המטרה שלי היא לעזור לסטודנטים בשנה הראשונה באוניברסיטה לרכוש כמה מיומנויות בסיסיות, שהן יסוד ללימודי תואר ראשון במדעים. הנושאים העיקריים כאן הם:</p>
-<ul>
-<li>המרת יחידות</li>
-<li>חשיבה בסיסית על ממדים</li>
-<li>סדרי גודל</li>
-<li>כתיב מדעי</li>
-<li>ספרות משמעותיות</li>
-</ul>
-<p>המיומנויות האלה עוזרות לנו לבדוק חישובים, להשוות כמויות ולהעריך אם תשובה הגיונית מבחינה פיזיקלית. קשה להפריז בתועלת שלהן.</p>
-<p>זהו פרויקט מתמשך בפיתוחו של יאיר מאו. התכנים כאן נכתבו בהשראת הניסיון שלי בהוראת קורסי מבוא בפיזיקה באוניברסיטה העברית בירושלים, בקמפוס רחובות.</p>
-<p>אם יש לכם הערות, תיקונים או הצעות, אשמח שתיצרו איתי קשר דרך <a href="https://yairmau.com/" target="_blank">האתר שלי</a>.</p>
-</section><section id="שם" class="level2"><h2 class="anchored" data-anchor-id="שם">שם</h2>
-<p>השם האנגלי והשם העברי של האתר הם שניהם משחקי מילים בהשראת כתבי הקודש והספרות.</p>
-<ul>
-<li>
-<strong>Measure for Measure</strong>. שייקספיר נתן את השם הזה למחזה שבו דמויות רחוקות משלמות מתמודדות עם חוקים נוקשים, צדק ורחמים. השם מהדהד את הדרשה על ההר: אמת המידה שבה אנו שופטים אחרים תשמש גם לשפוט אותנו (מתי ז׳, ב׳). המחזה מעלה גם שאלות של איזון ומתינות, ומציע לנו דרך נוספת לחשוב על המילה <em>measure</em> — מידה.</li>
-<li>
-<strong>אֵיפָה וְאֵיפָה</strong>. ספר דברים מזהיר אותנו שלא להחזיק שתי מידות שונות, אחת גדולה ואחת קטנה (דברים כ״ה, י״ד). איפה היא מידת נפח, ששימשה בדרך כלל למדידת תבואה. קנייה במידה הגדולה ומכירה במידה הקטנה היו מאפשרות לרמות. לכן הביטוי ״איפה ואיפה״ משמש לציון אפליה, חוסר הגינות או מוסר כפול.</li>
-</ul>
-<p>אני בהחלט מודע לכך ששני הביטויים מעוררים אסוציאציות לא כל כך נעימות. בחרתי בשמות האלה כי אותה מילה חוזרת בהם פעמיים, והמילה החוזרת קשורה למדידה. ובכל זאת, הרשו לי לנסות לרומם מעט את רוחנו מעבר למחשבות על גמול ועל משוא פנים. השמות האלה גם מזכירים לנו מדוע חשוב שיהיו לנו אמות מידה משותפות.</p>
-<p>השיטה המטרית היא תוצר של הנאורות, והיא התגבשה בתקופת המהפכה הצרפתית. קונְדוֹרְסֶה, לָבוּאַזיֶה ולַפְּלָס (ורבים אחרים) סייעו לפתח שיטת מדידה אוניברסלית. השאיפה הייתה הרבה מעבר להקלה על החישובים: להחליף את המגוון הלא־אחיד של המידות והמשקולות המקומיות שעבר בירושה מן הסדר הפיאודלי, לגזור אמות מידה מן הטבע ולא ממלכים, ולקדם שפה משותפת, עולמית וחסרת גבולות למסחר, לדיפלומטיה ולמדע. אמת מידה המבוססת על עולם הטבע יכולה להיות שייכת לכולם, במקום להיות תלויה בסמכותו של שליט מסוים.</p>
-<p>שמות האתר מזכירים לנו מה מונח על הכף כשהמידות תלויות בזהות הקונה, בזהות המוכר או בזהות מי שמחזיק בכוח. ירשנו דבר יוצא דופן מהמדענים האלה וממי שהמשיכו את עבודתם במאתיים השנים האחרונות. בואו נלמד להשתמש בו.</p>
+</header><section id="product-rule" class="level2" data-number="1.1"><h2 data-number="1.1" class="anchored" data-anchor-id="product-rule">
+<span class="header-section-number">1.1</span> product rule</h2>
+<p>It is no surprise that</p>
+<p><span class="math display">
+100 \cdot 1000 = 100000.
+</span></p>
+<p>Using power notation, the same can be written as</p>
+<p><span class="math display">
+10^2 \cdot 10^3 = 10^{2+3} = 10^5.
+</span></p>
+<p>Now we’re getting at something. Generalizing the pattern above, we can write the one important rule we need:</p>
+<div class="card-success">
+<p><span class="math display">
+10^a \cdot 10^b = 10^{a+b}.
+</span></p>
+</div>
+</section><section id="zero-exponent-rule" class="level2" data-number="1.2"><h2 data-number="1.2" class="anchored" data-anchor-id="zero-exponent-rule">
+<span class="header-section-number">1.2</span> zero exponent rule</h2>
+<p>From the product rule above we can derive all sorts of other useful relationships. Let’s start by taking <span class="math inline">b=0</span> in the product rule:</p>
+<p><span class="math display">
+10^a \cdot 10^0 = 10^{a+0} = 10^{a}.
+</span></p>
+<p>The only way to make the product rule true when one of the exponents is zero is to conclude the following:</p>
+<div class="card-success">
+<p><span class="math display">
+10^0 = 1
+</span></p>
+</div>
+</section><section id="negative-exponent-rule" class="level2" data-number="1.3"><h2 data-number="1.3" class="anchored" data-anchor-id="negative-exponent-rule">
+<span class="header-section-number">1.3</span> negative exponent rule</h2>
+<p>What happens if one of the exponents is negative? For example, let’s substitute <span class="math inline">b=-a</span> in the product rule:</p>
+<p><span class="math display">
+10^a \cdot 10^{-a} = 10^{a-a} = 10^0 = 1.
+</span></p>
+<p>If we divide both sides of the equation above by <span class="math inline">10^a</span> we get</p>
+<div class="card-success">
+<p><span class="math display">
+10^{-a} = \frac{1}{10^a}.
+</span></p>
+</div>
+<p>We’ve found that negative powers are related to <em>reciprocals</em>. (<span class="math inline">1/x</span> is called the reciprocal of <span class="math inline">x</span>)</p>
+</section><section id="quotient-rule" class="level2" data-number="1.4"><h2 data-number="1.4" class="anchored" data-anchor-id="quotient-rule">
+<span class="header-section-number">1.4</span> quotient rule</h2>
+<p>Now that we know how to deal with negative exponents, we can deal with a power divided by another power:</p>
+<p><span class="math display">
+10^a \div 10^b = 10^a \cdot \frac{1}{10^b} = 10^a \cdot 10^{-b} = 10^{a-b},
+</span></p>
+<p>or in short</p>
+<div class="card-success">
+<p><span class="math display">
+10^a \div 10^b = 10^{a-b}.
+</span></p>
+</div>
+</section><section id="power-of-a-power-rule" class="level2" data-number="1.5"><h2 data-number="1.5" class="anchored" data-anchor-id="power-of-a-power-rule">
+<span class="header-section-number">1.5</span> power of a power rule</h2>
+<p>What happens when we raise a power to another power?</p>
+<p><span class="math display">
+(10^a)^b
+=\underbrace{10^a\cdot10^a\cdots10^a}_{b\text{ factors}}
+=10^{\overbrace{a+a+\cdots+a}^{b\text{ terms}}}
+=10^{ab}.
+</span></p>
+<p>So, in short:</p>
+<div class="card-success">
+<p><span class="math display">
+(10^a)^b = 10^{ab}.
+</span></p>
+</div>
+</section><section id="fractional-exponent-rule" class="level2" data-number="1.6"><h2 data-number="1.6" class="anchored" data-anchor-id="fractional-exponent-rule">
+<span class="header-section-number">1.6</span> fractional exponent rule</h2>
+<p>What should a fractional exponent mean? Start with <span class="math inline">10^{1/2}</span>. Using the power-of-a-power rule:</p>
+<p><span class="math display">
+(10^{1/2})^2=10^{\frac{1}{2}\cdot 2} = 10.
+</span></p>
+<p>We don’t really want the <em>square</em> of <span class="math inline">10^{1/2}</span>, so how to <em>undo</em> the squaring operation? We take the <em>square root</em>, <span class="math inline">\sqrt[2]{\,\,}</span>. So we’ve learned that <span class="math inline">10^{1/2}=\sqrt[2]{10}</span>.</p>
+<p>The same reasoning works for any fraction <span class="math inline">a/b</span> (given that <span class="math inline">b</span> is positive):</p>
+<p><span class="math display">
+(10^{a/b})^b = 10^{\frac{a}{b}\cdot b} = 10^a.
+</span></p>
+<p>To <em>undo</em> the exponentiation by <span class="math inline">b</span>, we take the <span class="math inline">b</span>th root (<span class="math inline">\sqrt[b]{\,\,}</span>) of the equation above:</p>
+<div class="card-success">
+<p><span class="math display">
+10^{a/b} = \sqrt[b]{10^a}.
+</span></p>
+</div>
+</section><section id="the-power-10" class="level2" data-number="1.7"><h2 data-number="1.7" class="anchored" data-anchor-id="the-power-10">
+<span class="header-section-number">1.7</span> the power <span class="math inline">10</span>
+</h2>
+<p>We used the base <span class="math inline">10</span> in all the rules above, but there’s nothing sacred about it, we could have chosen any other number. Mastering how to work with powers of <span class="math inline">10</span> will be extremely useful in the other chapters of this website, so that’s why you see it here.</p>
+</section><section id="power-of-a-product-quotient" class="level2" data-number="1.8"><h2 data-number="1.8" class="anchored" data-anchor-id="power-of-a-product-quotient">
+<span class="header-section-number">1.8</span> power of a product / quotient</h2>
+<p>So far, we have kept the base fixed at <span class="math inline">10</span> and explored how exponents combine. Now let’s look inside the base: what happens when we raise a product or a quotient to a power? The same idea, repeated multiplication, gives us two more rules.</p>
+<p>Take, for instance</p>
+<p><span class="math display">
+(ab)^3
+=(ab)(ab)(ab)
+=(aaa)(bbb)
+=a^3b^3.
+</span></p>
+<p>Each factor contributes one <span class="math inline">a</span> and one <span class="math inline">b</span>. If instead of <span class="math inline">3</span> we had <span class="math inline">c</span> factors, we get <span class="math inline">c</span> copies of each:</p>
+<div class="card-success">
+<p><span class="math display">
+(ab)^c = a^c b^c.
+</span></p>
+</div>
+<p>The quotient rule follows immediately by writing division as multiplication by a reciprocal:</p>
+<p><span class="math display">
+\left(\frac ab\right)^c
+=(ab^{-1})^c
+=a^c(b^{-1})^c
+=a^cb^{-c}
+=\frac{a^c}{b^c},
+</span></p>
+<p>… so in short,</p>
+<div class="card-success">
+<p><span class="math display">
+\left(\frac ab\right)^c = \frac{a^c}{b^c}.
+</span></p>
+</div>
+</section><section id="repeated-multiplication" class="level2" data-number="1.9"><h2 data-number="1.9" class="anchored" data-anchor-id="repeated-multiplication">
+<span class="header-section-number">1.9</span> repeated multiplication</h2>
+<p>We started this chapter with repeated multiplication: for a positive integer <span class="math inline">n</span>, <span class="math inline">10^n</span> means a product of <span class="math inline">n</span> factors of <span class="math inline">10</span>. This gives us the product rule:</p>
+<p><span class="math display">
+10^a \cdot 10^b = 10^{a+b}.
+</span></p>
+<p>But what should <span class="math inline">10^{-2}</span> or <span class="math inline">10^{3/2}</span> mean? We can’t literally write a product containing <span class="math inline">-2</span> or <span class="math inline">3/2</span> factors. Instead, we use the product rule as our guide. We define powers with zero, negative, and fractional exponents so that the rule keeps working. As we’ve seen, this leads us to <span class="math inline">10^0=1</span>, negative powers as reciprocals, and fractional powers as roots. Repeated multiplication gets us started, and preserving the rule takes us further.</p>
+</section><section id="to-sum-up" class="level2" data-number="1.10"><h2 data-number="1.10" class="anchored" data-anchor-id="to-sum-up">
+<span class="header-section-number">1.10</span> to sum up</h2>
+<p><span class="math display">\begin{align}
+10^a \cdot 10^b &amp;= 10^{a+b} \\
+10^0 &amp;= 1 \\
+10^{-a} &amp;= \frac{1}{10^a} \\
+10^a \div 10^b &amp;= 10^{a-b} \\
+(10^a)^b &amp;= 10^{ab} \\
+10^{a/b} &amp;= \sqrt[b]{10^a} \\
+(ab)^c &amp;= a^c b^c \\
+\left(\frac ab\right)^c &amp;= \frac{a^c}{b^c}
+\end{align}</span></p>
 
 
-</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
@@ -283,12 +436,12 @@ document.addEventListener("DOMContentLoaded", () => {
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "הועתק!");
+      button.setAttribute("title", "Copied!");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "הועתק!");
+        button.setAttribute("data-bs-title", "Copied!");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -382,7 +535,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/yairmau\.github\.io\/units\/he");
+        var filterRegex = new RegExp("https:\/\/yairmau\.github\.io\/units\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -709,10 +862,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
   </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+      <a href="../index.en.html" class="pagination-link" aria-label="Home">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Home</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./mathematical_foundations/powers_rules.he.html" class="pagination-link" aria-label="חוקי חזקות">
-        <span class="nav-page-text"><span class="chapter-number">1</span>  <span class="chapter-title">חוקי חזקות</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../quantifying/dimensions.en.html" class="pagination-link" aria-label="dimensions">
+        <span class="nav-page-text"><span class="chapter-number">2</span>  <span class="chapter-title">dimensions</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

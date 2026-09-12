@@ -1,0 +1,17 @@
+# dimensions
+
+Dimensions are physical quantities that describe the nature of a measurement, such as length, time, or mass. Units, on the other hand, are standardized quantities used to express the value of a dimension. For example, "meter", "inch" and "parsec" are units for the dimension of length.
+
+The three fundamental dimensions in mechanics are **length**, **time**, and **mass**. In addition to these, other important dimensions include **temperature**, **electric current**, and **amount of substance**. Each physical quantity can be described in terms of these basic dimensions.
+
+Commonly used dimensions in science and engineering:
+
+| Dimension         | Symbol | Description                  | SI Unit          |
+|-------------------|--------|------------------------------|------------------|
+| Length            | L      | distance or size             | meter (m)        |
+| Time              | T      | duration or interval         | second (s)       |
+| Mass              | M      | amount of matter             | kilogram (kg)    |
+| Temperature       | Θ      | degree of hotness            | kelvin (K)       |
+| Electric current  | I      | flow of electric charge      | ampere (A)       |
+| Amount of substance | N    | quantity of entities         | mole (mol)       |
+| Luminous intensity | J     | brightness                   | candela (cd)     |

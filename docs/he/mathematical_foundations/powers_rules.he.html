@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="he" xml:lang="he" dir="rtl">
 <head>
-<link rel="alternate" hreflang="en" href="https://yairmau.github.io/units/en/intro.en.html">
-<link rel="alternate" hreflang="he" href="https://yairmau.github.io/units/he/intro.he.html">
+<link rel="alternate" hreflang="en" href="https://yairmau.github.io/units/en/mathematical_foundations/powers_rules.en.html">
+<link rel="alternate" hreflang="he" href="https://yairmau.github.io/units/he/mathematical_foundations/powers_rules.he.html">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.9.36">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>1  מבוא – אֵיפָה וְאֵיפָה</title>
+<title>1  חוקי חזקות – אֵיפָה וְאֵיפָה</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -24,14 +24,14 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
-<script src="site_libs/quarto-nav/quarto-nav.js"></script><script src="site_libs/quarto-nav/headroom.min.js"></script><script src="site_libs/clipboard/clipboard.min.js"></script><script src="site_libs/quarto-search/autocomplete.umd.js"></script><script src="site_libs/quarto-search/fuse.min.js"></script><script src="site_libs/quarto-search/quarto-search.js"></script><meta name="quarto:offset" content="./">
-<link href="./basic_concepts/area-and-volume.he.html" rel="next">
-<link href="./index.he.html" rel="prev">
-<link href="./archive/logo.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script><script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="site_libs/quarto-html/popper.min.js"></script><script src="site_libs/quarto-html/tippy.umd.min.js"></script><script src="site_libs/quarto-html/anchor.min.js"></script><link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e3574cce5e3fde4ed97df547c7360872.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script><link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-54cc5f61f87fd151f88f457a17120cd6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script><script src="../site_libs/quarto-nav/headroom.min.js"></script><script src="../site_libs/clipboard/clipboard.min.js"></script><script src="../site_libs/quarto-search/autocomplete.umd.js"></script><script src="../site_libs/quarto-search/fuse.min.js"></script><script src="../site_libs/quarto-search/quarto-search.js"></script><meta name="quarto:offset" content="../">
+<link href="../quantifying/dimensions.he.html" rel="next">
+<link href="../index.he.html" rel="prev">
+<link href="../archive/logo.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script><script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="../site_libs/quarto-html/popper.min.js"></script><script src="../site_libs/quarto-html/tippy.umd.min.js"></script><script src="../site_libs/quarto-html/anchor.min.js"></script><link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e3574cce5e3fde4ed97df547c7360872.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script><link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-54cc5f61f87fd151f88f457a17120cd6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -59,7 +59,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "חפש"
   }
 }</script><link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-<script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script><script>document.addEventListener("DOMContentLoaded", function () {
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const button = document.querySelector(".quarto-secondary-nav .quarto-btn-toggle");
+  if (!button) return;
+  const hebrew = document.documentElement.lang.startsWith("he");
+  const label = document.createElement("span");
+  label.className = "chapter-menu-label";
+  label.textContent = hebrew ? "פרקים" : "Chapters";
+  button.append(label);
+  button.setAttribute("aria-label", label.textContent);
+  button.querySelector("i")?.setAttribute("aria-hidden", "true");
+});
+</script><script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script><script>document.addEventListener("DOMContentLoaded", function () {
  var mathElements = document.getElementsByClassName("math");
  var macros = [];
  for (var i = 0; i < mathElements.length; i++) {
@@ -98,8 +110,8 @@ const typesetMath = (el) => {
 window.Quarto = {
   typesetMath
 };
-</script><link rel="stylesheet" href="hebrew.css">
-<link rel="stylesheet" href="styles.css">
+</script><link rel="stylesheet" href="../hebrew.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 <body class="nav-sidebar floating quarto-light">
 
@@ -108,7 +120,10 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="הצג/הסתר את סרגל הניווט" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro.he.html"><span class="chapter-number">1</span>  <span class="chapter-title">מבוא</span></a></li></ol></nav><a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="הצג/הסתר את סרגל הניווט" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="../mathematical_foundations/powers_rules.he.html">יסודות מתמטיים</a></li>
+<li class="breadcrumb-item"><a href="../mathematical_foundations/powers_rules.he.html"><span class="chapter-number">1</span>  <span class="chapter-title">חוקי חזקות</span></a></li>
+</ol></nav><a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="הצג/הסתר את סרגל הניווט" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="חפש" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -117,10 +132,10 @@ window.Quarto = {
   </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="./index.html" class="sidebar-logo-link">
-      <img src="./archive/logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none"><img src="./archive/logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none"></a>
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../archive/logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none"><img src="../archive/logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none"></a>
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">אֵיפָה וְאֵיפָה</a> 
+      <a href="../">אֵיפָה וְאֵיפָה</a> 
         <div class="sidebar-tools-main">
     <a href="https://yairmau.com/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-house-fill"></i></a>
     <a href="https://github.com/yairmau/units/" title="קוד מקור" class="quarto-navigation-tool px-1" aria-label="קוד מקור"><i class="bi bi-github"></i></a>
@@ -133,26 +148,20 @@ window.Quarto = {
         </div>
         </div>
     <div class="dropdown" id="languages-links-parent">
-<a class="btn btn-primary babelquarto-languages-button" id="languages-button" href="https://yairmau.github.io/units/en/intro.en.html" hreflang="en"><i class="bi bi-globe2"></i> :English</a>
+<a class="btn btn-primary babelquarto-languages-button" id="languages-button" href="https://yairmau.github.io/units/en/mathematical_foundations/powers_rules.en.html" hreflang="en"><i class="bi bi-globe2"></i> :English</a>
 </div>
 <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.he.html" class="sidebar-item-text sidebar-link">
+  <a href="../index.he.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">דף הבית</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./intro.he.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>  <span class="chapter-title">מבוא</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">מושגי יסוד</span></a>
+ <span class="menu-text">יסודות מתמטיים</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="הצג/הסתר מקטע">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -160,20 +169,60 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basic_concepts/area-and-volume.he.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>  <span class="chapter-title">שטח ונפח</span></span></a>
+  <a href="../mathematical_foundations/powers_rules.he.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>  <span class="chapter-title">חוקי חזקות</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">לכמת את העולם</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="הצג/הסתר מקטע">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../quantifying/dimensions.he.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>  <span class="chapter-title">ממדים</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basic_concepts/concentration.he.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>  <span class="chapter-title">ריכוז</span></span></a>
+  <a href="../quantifying/units.he.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>  <span class="chapter-title">יחידות</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">מושגי יסוד</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="הצג/הסתר מקטע">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../basic_concepts/area-and-volume.he.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>  <span class="chapter-title">שטח ונפח</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basic_concepts/density.he.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>  <span class="chapter-title">צפיפות</span></span></a>
+  <a href="../basic_concepts/concentration.he.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>  <span class="chapter-title">ריכוז</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../basic_concepts/density.he.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>  <span class="chapter-title">צפיפות</span></span></a>
   </div>
 </li>
       </ul>
@@ -190,18 +239,28 @@ window.Quarto = {
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">תוכן עניינים</h2>
    
   <ul>
-<li><a href="#%D7%9E%D7%9E%D7%93%D7%99%D7%9D" id="toc-ממדים" class="nav-link active" data-scroll-target="#ממדים"><span class="header-section-number">1.1</span> ממדים</a></li>
-  <li><a href="#%D7%9E%D7%A2%D7%A8%D7%9B%D7%AA-%D7%94%D7%99%D7%97%D7%99%D7%93%D7%95%D7%AA-%D7%94%D7%91%D7%99%D7%9F%D7%9C%D7%90%D7%95%D7%9E%D7%99%D7%AA-si" id="toc-מערכת-היחידות-הביןלאומית-si" class="nav-link" data-scroll-target="#מערכת-היחידות-הביןלאומית-si"><span class="header-section-number">1.2</span> מערכת היחידות הבין־לאומית (SI)</a></li>
-  <li><a href="#%D7%AA%D7%97%D7%99%D7%9C%D7%99%D7%95%D7%AA" id="toc-תחיליות" class="nav-link" data-scroll-target="#תחיליות"><span class="header-section-number">1.3</span> תחיליות</a></li>
+<li><a href="#%D7%9B%D7%A4%D7%9C-%D7%97%D7%96%D7%A7%D7%95%D7%AA" id="toc-כפל-חזקות" class="nav-link active" data-scroll-target="#כפל-חזקות"><span class="header-section-number">1.1</span> כפל חזקות</a></li>
+  <li><a href="#%D7%9E%D7%A2%D7%A8%D7%99%D7%9A-%D7%90%D7%A4%D7%A1" id="toc-מעריך-אפס" class="nav-link" data-scroll-target="#מעריך-אפס"><span class="header-section-number">1.2</span> מעריך אפס</a></li>
+  <li><a href="#%D7%9E%D7%A2%D7%A8%D7%99%D7%9A-%D7%A9%D7%9C%D7%99%D7%9C%D7%99" id="toc-מעריך-שלילי" class="nav-link" data-scroll-target="#מעריך-שלילי"><span class="header-section-number">1.3</span> מעריך שלילי</a></li>
+  <li><a href="#%D7%97%D7%99%D7%9C%D7%95%D7%A7-%D7%97%D7%96%D7%A7%D7%95%D7%AA" id="toc-חילוק-חזקות" class="nav-link" data-scroll-target="#חילוק-חזקות"><span class="header-section-number">1.4</span> חילוק חזקות</a></li>
+  <li><a href="#%D7%97%D7%96%D7%A7%D7%94-%D7%A9%D7%9C-%D7%97%D7%96%D7%A7%D7%94" id="toc-חזקה-של-חזקה" class="nav-link" data-scroll-target="#חזקה-של-חזקה"><span class="header-section-number">1.5</span> חזקה של חזקה</a></li>
+  <li><a href="#%D7%9E%D7%A2%D7%A8%D7%99%D7%9A-%D7%A9%D7%91%D7%A8%D7%99" id="toc-מעריך-שברי" class="nav-link" data-scroll-target="#מעריך-שברי"><span class="header-section-number">1.6</span> מעריך שברי</a></li>
+  <li><a href="#%D7%94%D7%91%D7%A1%D7%99%D7%A1-10" id="toc-הבסיס-10" class="nav-link" data-scroll-target="#הבסיס-10"><span class="header-section-number">1.7</span> הבסיס <span class="math inline">10</span></a></li>
+  <li><a href="#%D7%97%D7%96%D7%A7%D7%94-%D7%A9%D7%9C-%D7%9E%D7%9B%D7%A4%D7%9C%D7%94-%D7%90%D7%95-%D7%9E%D7%A0%D7%94" id="toc-חזקה-של-מכפלה-או-מנה" class="nav-link" data-scroll-target="#חזקה-של-מכפלה-או-מנה"><span class="header-section-number">1.8</span> חזקה של מכפלה או מנה</a></li>
+  <li><a href="#%D7%9B%D7%A4%D7%9C-%D7%97%D7%95%D7%96%D7%A8" id="toc-כפל-חוזר" class="nav-link" data-scroll-target="#כפל-חוזר"><span class="header-section-number">1.9</span> כפל חוזר</a></li>
+  <li><a href="#%D7%9C%D7%A1%D7%99%D7%9B%D7%95%D7%9D" id="toc-לסיכום" class="nav-link" data-scroll-target="#לסיכום"><span class="header-section-number">1.10</span> לסיכום</a></li>
   </ul></nav>
 </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="../mathematical_foundations/powers_rules.he.html">יסודות מתמטיים</a></li>
+<li class="breadcrumb-item"><a href="../mathematical_foundations/powers_rules.he.html"><span class="chapter-number">1</span>  <span class="chapter-title">חוקי חזקות</span></a></li>
+</ol></nav><div class="quarto-title">
 <div class="quarto-title-block"><div>
 <h1 class="title">
-<span class="chapter-number">1</span>  <span class="chapter-title">מבוא</span>
+<span class="chapter-number">1</span>  <span class="chapter-title">חוקי חזקות</span>
 </h1>
-<button type="button" class="btn code-tools-button" id="quarto-code-tools-source" data-quarto-source-url="https://github.com/yairmau/units/blob/main/intro.he.qmd"><i class="bi"></i> קוד</button>
+<button type="button" class="btn code-tools-button" id="quarto-code-tools-source" data-quarto-source-url="https://github.com/yairmau/units/blob/main/mathematical_foundations/powers_rules.he.qmd"><i class="bi"></i> קוד</button>
 </div></div>
 </div>
 
@@ -216,210 +275,147 @@ window.Quarto = {
   
 
 
-</header><section id="ממדים" class="level2" data-number="1.1"><h2 data-number="1.1" class="anchored" data-anchor-id="ממדים">
-<span class="header-section-number">1.1</span> ממדים</h2>
-<p>ממדים הם גדלים פיזיקליים המתארים את אופי המדידה, כגון אורך, זמן או מסה. יחידות, לעומת זאת, הן כמויות מוסכמות המשמשות לביטוי ערכו של גודל בעל ממד מסוים. למשל, מטר, אינץ׳ ופרסק הם יחידות של ממד האורך.</p>
-<p>שלושת הממדים הבסיסיים במכניקה הם <strong>אורך</strong>, <strong>זמן</strong> ו<strong>מסה</strong>. ממדים חשובים נוספים הם <strong>טמפרטורה</strong>, <strong>זרם חשמלי</strong> ו<strong>כמות חומר</strong>. אפשר לתאר כל גודל פיזיקלי באמצעות הממדים הבסיסיים האלה.</p>
-<p>ממדים נפוצים במדע ובהנדסה:</p>
-<table class="caption-top table">
-<thead><tr class="header">
-<th>ממד</th>
-<th>סמל</th>
-<th>תיאור</th>
-<th>יחידת SI</th>
-</tr></thead>
-<tbody>
-<tr class="odd">
-<td>אורך</td>
-<td>L</td>
-<td>מרחק או גודל</td>
-<td>מטר (m)</td>
-</tr>
-<tr class="even">
-<td>זמן</td>
-<td>T</td>
-<td>משך או פרק זמן</td>
-<td>שנייה (s)</td>
-</tr>
-<tr class="odd">
-<td>מסה</td>
-<td>M</td>
-<td>כמות החומר</td>
-<td>קילוגרם (kg)</td>
-</tr>
-<tr class="even">
-<td>טמפרטורה</td>
-<td>Θ</td>
-<td>מידת החום</td>
-<td>קלווין (K)</td>
-</tr>
-<tr class="odd">
-<td>זרם חשמלי</td>
-<td>I</td>
-<td>זרימה של מטען חשמלי</td>
-<td>אמפר (A)</td>
-</tr>
-<tr class="even">
-<td>כמות חומר</td>
-<td>N</td>
-<td>כמות של ישויות</td>
-<td>מול (mol)</td>
-</tr>
-<tr class="odd">
-<td>עוצמת אור</td>
-<td>J</td>
-<td>עוצמת ההארה בכיוון נתון</td>
-<td>קנדלה (cd)</td>
-</tr>
-</tbody>
-</table></section><section id="מערכת-היחידות-הביןלאומית-si" class="level2" data-number="1.2"><h2 data-number="1.2" class="anchored" data-anchor-id="מערכת-היחידות-הביןלאומית-si">
-<span class="header-section-number">1.2</span> מערכת היחידות הבין־לאומית (SI)</h2>
-<p>מערכת היחידות הבין־לאומית, SI (בצרפתית: Système International d’Unités), היא הצורה המודרנית של השיטה המטרית ומערכת המדידה הנפוצה ביותר במדע ובהנדסה. היא מגדירה שבע יחידות בסיס — מטר, קילוגרם, שנייה, אמפר, קלווין, מול וקנדלה — שמהן נגזרות כל שאר היחידות. מערכת SI מספקת דרך אחידה לבטא גדלים פיזיקליים ולהשוות ביניהם בתחומים ובמדינות שונים.</p>
-</section><section id="תחיליות" class="level2" data-number="1.3"><h2 data-number="1.3" class="anchored" data-anchor-id="תחיליות">
-<span class="header-section-number">1.3</span> תחיליות</h2>
-<p>תחיליות הן צירופי אותיות קצרים המופיעים לפני יחידה ומציינים כפולות או חלקים שלה. הן מקלות על ביטוי כמויות גדולות מאוד או קטנות מאוד. התחיליות הנפוצות ביותר מודגשות בטבלה שלהלן.</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 21%">
-<col style="width: 13%">
-<col style="width: 31%">
-<col style="width: 34%">
-</colgroup>
-<thead><tr class="header">
-<th>תחילית</th>
-<th>סמל</th>
-<th>חזקה של 10</th>
-<th>דוגמה נפוצה</th>
-</tr></thead>
-<tbody>
-<tr class="odd">
-<td>יוטה</td>
-<td>Y</td>
-<td><span class="math inline">10^{24}</span></td>
-<td>YB, יוטה־בייט (מחשוב, נתונים)</td>
-</tr>
-<tr class="even">
-<td>זטה</td>
-<td>Z</td>
-<td><span class="math inline">10^{21}</span></td>
-<td>ZJ, זטה־ג׳ול (אסטרונומיה, אנרגיה)</td>
-</tr>
-<tr class="odd">
-<td>אקסה</td>
-<td>E</td>
-<td><span class="math inline">10^{18}</span></td>
-<td>EW, אקסה־ואט (אנרגיה, הספק)</td>
-</tr>
-<tr class="even">
-<td>פטה</td>
-<td>P</td>
-<td><span class="math inline">10^{15}</span></td>
-<td>PB, פטה־בייט (מחשוב, נתונים)</td>
-</tr>
-<tr class="odd">
-<td><strong>טרה</strong></td>
-<td><strong>T</strong></td>
-<td><strong><span class="math inline">10^{12}</span></strong></td>
-<td><strong>TeV, טרה־אלקטרון־וולט (פיזיקה, אנרגיה)</strong></td>
-</tr>
-<tr class="even">
-<td><strong>גיגה</strong></td>
-<td><strong>G</strong></td>
-<td><strong><span class="math inline">10^{9}</span></strong></td>
-<td><strong>GHz, גיגה־הרץ (אלקטרוניקה, תדירות)</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>מגה</strong></td>
-<td><strong>M</strong></td>
-<td><strong><span class="math inline">10^{6}</span></strong></td>
-<td><strong>MW, מגה־ואט (אנרגיה, הספק)</strong></td>
-</tr>
-<tr class="even">
-<td><strong>קילו</strong></td>
-<td><strong>k</strong></td>
-<td><strong><span class="math inline">10^{3}</span></strong></td>
-<td><strong>km, קילומטר (גאוגרפיה, אורך)</strong></td>
-</tr>
-<tr class="odd">
-<td>הקטו</td>
-<td>h</td>
-<td><span class="math inline">10^{2}</span></td>
-<td>hPa, הקטו־פסקל (מטאורולוגיה, לחץ)</td>
-</tr>
-<tr class="even">
-<td>דקה</td>
-<td>da</td>
-<td><span class="math inline">10^{1}</span></td>
-<td>dam, דקה־מטר (הידרולוגיה, אורך)</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td><span class="math inline">10^{0}</span></td>
-<td>m, מטר (SI, אורך)</td>
-</tr>
-<tr class="even">
-<td><strong>דצי</strong></td>
-<td><strong>d</strong></td>
-<td><strong><span class="math inline">10^{-1}</span></strong></td>
-<td><strong>dL, דציליטר (כימיה, נפח)</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>סנטי</strong></td>
-<td><strong>c</strong></td>
-<td><strong><span class="math inline">10^{-2}</span></strong></td>
-<td><strong>cm, סנטימטר (ביולוגיה, אורך)</strong></td>
-</tr>
-<tr class="even">
-<td><strong>מילי</strong></td>
-<td><strong>m</strong></td>
-<td><strong><span class="math inline">10^{-3}</span></strong></td>
-<td><strong>ms, מילישנייה (מדעי המוח, זמן)</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>מיקרו</strong></td>
-<td><strong>µ</strong></td>
-<td><strong><span class="math inline">10^{-6}</span></strong></td>
-<td><strong>µm, מיקרומטר (מיקרוסקופיה, אורך)</strong></td>
-</tr>
-<tr class="even">
-<td><strong>ננו</strong></td>
-<td><strong>n</strong></td>
-<td><strong><span class="math inline">10^{-9}</span></strong></td>
-<td><strong>nm, ננומטר (חומרים, אורך)</strong></td>
-</tr>
-<tr class="odd">
-<td>פיקו</td>
-<td>p</td>
-<td><span class="math inline">10^{-12}</span></td>
-<td>pF, פיקו־פאראד (אלקטרוניקה, קיבול)</td>
-</tr>
-<tr class="even">
-<td>פמטו</td>
-<td>f</td>
-<td><span class="math inline">10^{-15}</span></td>
-<td>fs, פמטושנייה (פיזיקה, זמן)</td>
-</tr>
-<tr class="odd">
-<td>אטו</td>
-<td>a</td>
-<td><span class="math inline">10^{-18}</span></td>
-<td>as, אטושנייה (קוונטים, זמן)</td>
-</tr>
-<tr class="even">
-<td>זפטו</td>
-<td>z</td>
-<td><span class="math inline">10^{-21}</span></td>
-<td>zm, זפטומטר (פיזיקה, אורך)</td>
-</tr>
-<tr class="odd">
-<td>יוקטו</td>
-<td>y</td>
-<td><span class="math inline">10^{-24}</span></td>
-<td>yg, יוקטוגרם (כימיה, מסה)</td>
-</tr>
-</tbody>
-</table></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</header><section id="כפל-חזקות" class="level2" data-number="1.1"><h2 data-number="1.1" class="anchored" data-anchor-id="כפל-חזקות">
+<span class="header-section-number">1.1</span> כפל חזקות</h2>
+<p>אין זה מפתיע ש־</p>
+<p><span class="math display">
+100 \cdot 1000 = 100000.
+</span></p>
+<p>בכתיב חזקות, אפשר לכתוב את אותו הדבר כך:</p>
+<p><span class="math display">
+10^2 \cdot 10^3 = 10^{2+3} = 10^5.
+</span></p>
+<p>עכשיו אנחנו מתחילים להתקדם. אם נכליל את הדפוס שלמעלה, נוכל לנסח את החוק הבסיסי שאנחנו צריכים:</p>
+<div class="card-success">
+<p><span class="math display">
+10^a \cdot 10^b = 10^{a+b}.
+</span></p>
+</div>
+</section><section id="מעריך-אפס" class="level2" data-number="1.2"><h2 data-number="1.2" class="anchored" data-anchor-id="מעריך-אפס">
+<span class="header-section-number">1.2</span> מעריך אפס</h2>
+<p>מחוק הכפל שלמעלה אפשר לגזור עוד כל מיני קשרים שימושיים. נתחיל בהצבת <span class="math inline">b=0</span> בחוק הכפל:</p>
+<p><span class="math display">
+10^a \cdot 10^0 = 10^{a+0} = 10^{a}.
+</span></p>
+<p>הדרך היחידה לשמור על חוק הכפל גם כאשר אחד המעריכים הוא אפס היא להסיק ש־</p>
+<div class="card-success">
+<p><span class="math display">
+10^0 = 1
+</span></p>
+</div>
+</section><section id="מעריך-שלילי" class="level2" data-number="1.3"><h2 data-number="1.3" class="anchored" data-anchor-id="מעריך-שלילי">
+<span class="header-section-number">1.3</span> מעריך שלילי</h2>
+<p>מה קורה אם אחד המעריכים שלילי? למשל, נציב <span class="math inline">b=-a</span> בחוק הכפל:</p>
+<p><span class="math display">
+10^a \cdot 10^{-a} = 10^{a-a} = 10^0 = 1.
+</span></p>
+<p>אם נחלק את שני אגפי המשוואה שלמעלה ב־<span class="math inline">10^a</span>, נקבל</p>
+<div class="card-success">
+<p><span class="math display">
+10^{-a} = \frac{1}{10^a}.
+</span></p>
+</div>
+<p>מצאנו שחזקות בעלות מעריך שלילי קשורות ל<em>מספרים הופכיים</em>. (<span class="math inline">1/x</span> נקרא המספר ההופכי של <span class="math inline">x</span>.)</p>
+</section><section id="חילוק-חזקות" class="level2" data-number="1.4"><h2 data-number="1.4" class="anchored" data-anchor-id="חילוק-חזקות">
+<span class="header-section-number">1.4</span> חילוק חזקות</h2>
+<p>עכשיו, כשאנחנו יודעים איך לעבוד עם מעריכים שליליים, נוכל לחלק חזקה אחת באחרת:</p>
+<p><span class="math display">
+10^a \div 10^b = 10^a \cdot \frac{1}{10^b} = 10^a \cdot 10^{-b} = 10^{a-b},
+</span></p>
+<p>או בקיצור,</p>
+<div class="card-success">
+<p><span class="math display">
+10^a \div 10^b = 10^{a-b}.
+</span></p>
+</div>
+</section><section id="חזקה-של-חזקה" class="level2" data-number="1.5"><h2 data-number="1.5" class="anchored" data-anchor-id="חזקה-של-חזקה">
+<span class="header-section-number">1.5</span> חזקה של חזקה</h2>
+<p>מה קורה כשמעלים חזקה בחזקה נוספת?</p>
+<p><span class="math display">
+(10^a)^b
+=\underbrace{10^a\cdot10^a\cdots10^a}_{b\text{ גורמים}}
+=10^{\overbrace{a+a+\cdots+a}^{b\text{ איברים}}}
+=10^{ab}.
+</span></p>
+<p>אז בקיצור:</p>
+<div class="card-success">
+<p><span class="math display">
+(10^a)^b = 10^{ab}.
+</span></p>
+</div>
+</section><section id="מעריך-שברי" class="level2" data-number="1.6"><h2 data-number="1.6" class="anchored" data-anchor-id="מעריך-שברי">
+<span class="header-section-number">1.6</span> מעריך שברי</h2>
+<p>מה אמורה להיות המשמעות של מעריך שברי? נתחיל ב־<span class="math inline">10^{1/2}</span>. לפי חוק החזקה של חזקה:</p>
+<p><span class="math display">
+(10^{1/2})^2=10^{\frac{1}{2}\cdot 2} = 10.
+</span></p>
+<p>אנחנו לא באמת מחפשים את <em>הריבוע</em> של <span class="math inline">10^{1/2}</span>, אז איך <em>מבטלים</em> את פעולת ההעלאה בריבוע? מוציאים <em>שורש ריבועי</em>, <span class="math inline">\sqrt[2]{\,\,}</span>. כך למדנו ש־<span class="math inline">10^{1/2}=\sqrt[2]{10}</span>.</p>
+<p>אותו שיקול עובד עבור כל שבר <span class="math inline">a/b</span> (בתנאי ש־<span class="math inline">b</span> חיובי):</p>
+<p><span class="math display">
+(10^{a/b})^b = 10^{\frac{a}{b}\cdot b} = 10^a.
+</span></p>
+<p>כדי <em>לבטל</em> את ההעלאה בחזקת <span class="math inline">b</span>, נוציא שורש מסדר <span class="math inline">b</span> (<span class="math inline">\sqrt[b]{\,\,}</span>) משני אגפי המשוואה שלמעלה:</p>
+<div class="card-success">
+<p><span class="math display">
+10^{a/b} = \sqrt[b]{10^a}.
+</span></p>
+</div>
+</section><section id="הבסיס-10" class="level2" data-number="1.7"><h2 data-number="1.7" class="anchored" data-anchor-id="הבסיס-10">
+<span class="header-section-number">1.7</span> הבסיס <span class="math inline">10</span>
+</h2>
+<p>השתמשנו בבסיס <span class="math inline">10</span> בכל החוקים שלמעלה, אבל אין בו שום דבר קדוש — יכולנו לבחור גם מספר אחר. שליטה בעבודה עם חזקות של <span class="math inline">10</span> תהיה שימושית מאוד בפרקים האחרים באתר הזה, ולכן בחרנו בו כאן.</p>
+</section><section id="חזקה-של-מכפלה-או-מנה" class="level2" data-number="1.8"><h2 data-number="1.8" class="anchored" data-anchor-id="חזקה-של-מכפלה-או-מנה">
+<span class="header-section-number">1.8</span> חזקה של מכפלה או מנה</h2>
+<p>עד עכשיו שמרנו על בסיס קבוע, <span class="math inline">10</span>, ובדקנו איך המעריכים משתלבים. עכשיו נסתכל בתוך הבסיס: מה קורה כשמעלים מכפלה או מנה בחזקה? אותו רעיון, כפל חוזר, נותן לנו עוד שני חוקים.</p>
+<p>ניקח למשל</p>
+<p><span class="math display">
+(ab)^3
+=(ab)(ab)(ab)
+=(aaa)(bbb)
+=a^3b^3.
+</span></p>
+<p>כל גורם תורם <span class="math inline">a</span> אחד ו־<span class="math inline">b</span> אחד. אם במקום <span class="math inline">3</span> גורמים היו לנו <span class="math inline">c</span> גורמים, היינו מקבלים <span class="math inline">c</span> עותקים מכל אחד:</p>
+<div class="card-success">
+<p><span class="math display">
+(ab)^c = a^c b^c.
+</span></p>
+</div>
+<p>החוק לחזקה של מנה נובע מיד מכתיבת החילוק ככפל במספר ההופכי:</p>
+<p><span class="math display">
+\left(\frac ab\right)^c
+=(ab^{-1})^c
+=a^c(b^{-1})^c
+=a^cb^{-c}
+=\frac{a^c}{b^c},
+</span></p>
+<p>… אז בקיצור,</p>
+<div class="card-success">
+<p><span class="math display">
+\left(\frac ab\right)^c = \frac{a^c}{b^c}.
+</span></p>
+</div>
+</section><section id="כפל-חוזר" class="level2" data-number="1.9"><h2 data-number="1.9" class="anchored" data-anchor-id="כפל-חוזר">
+<span class="header-section-number">1.9</span> כפל חוזר</h2>
+<p>התחלנו את הפרק בכפל חוזר: עבור מספר שלם וחיובי <span class="math inline">n</span>, הביטוי <span class="math inline">10^n</span> פירושו מכפלה של <span class="math inline">n</span> גורמים שערכו של כל אחד מהם הוא <span class="math inline">10</span>. מכאן קיבלנו את חוק הכפל:</p>
+<p><span class="math display">
+10^a \cdot 10^b = 10^{a+b}.
+</span></p>
+<p>אבל מה אמורה להיות המשמעות של <span class="math inline">10^{-2}</span> או של <span class="math inline">10^{3/2}</span>? אי אפשר לכתוב ממש מכפלה שמכילה <span class="math inline">-2</span> או <span class="math inline">3/2</span> גורמים. במקום זאת, אנחנו משתמשים בחוק הכפל כמדריך. אנחנו מגדירים חזקות בעלות מעריך אפס, מעריך שלילי ומעריך שברי כך שהחוק ימשיך להתקיים. כפי שראינו, כך אנחנו מגיעים ל־<span class="math inline">10^0=1</span>, לחזקות בעלות מעריך שלילי כמספרים הופכיים, ולחזקות בעלות מעריך שברי כשורשים. הכפל החוזר נותן לנו נקודת התחלה, והשמירה על החוק מאפשרת לנו להתקדם הלאה.</p>
+</section><section id="לסיכום" class="level2" data-number="1.10"><h2 data-number="1.10" class="anchored" data-anchor-id="לסיכום">
+<span class="header-section-number">1.10</span> לסיכום</h2>
+<p><span class="math display">\begin{align}
+10^a \cdot 10^b &amp;= 10^{a+b} \\
+10^0 &amp;= 1 \\
+10^{-a} &amp;= \frac{1}{10^a} \\
+10^a \div 10^b &amp;= 10^{a-b} \\
+(10^a)^b &amp;= 10^{ab} \\
+10^{a/b} &amp;= \sqrt[b]{10^a} \\
+(ab)^c &amp;= a^c b^c \\
+\left(\frac ab\right)^c &amp;= \frac{a^c}{b^c}
+\end{align}</span></p>
+
+
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
@@ -870,13 +866,13 @@ window.Quarto = {
     }
   });
   </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
-      <a href="./index.he.html" class="pagination-link" aria-label="דף הבית">
+      <a href="../index.he.html" class="pagination-link" aria-label="דף הבית">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">דף הבית</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./basic_concepts/area-and-volume.he.html" class="pagination-link" aria-label="שטח ונפח">
-        <span class="nav-page-text"><span class="chapter-number">2</span>  <span class="chapter-title">שטח ונפח</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../quantifying/dimensions.he.html" class="pagination-link" aria-label="ממדים">
+        <span class="nav-page-text"><span class="chapter-number">2</span>  <span class="chapter-title">ממדים</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

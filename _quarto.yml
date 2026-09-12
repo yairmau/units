@@ -36,7 +36,15 @@ book:
 
   chapters:
     - index.en.qmd
-    - intro.en.qmd
+    - part: mathematical foundations
+      part-he: יסודות מתמטיים
+      chapters:
+        - mathematical_foundations/powers_rules.en.qmd
+    - part: quantifying the world
+      part-he: לכמת את העולם
+      chapters:
+        - quantifying/dimensions.en.qmd
+        - quantifying/units.en.qmd
     - part: basic concepts
       part-he: מושגי יסוד
       chapters:

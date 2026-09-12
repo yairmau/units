@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="he" xml:lang="he" dir="rtl">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="he" xml:lang="he">
 <head>
-<link rel="alternate" hreflang="en" href="https://yairmau.github.io/units/en/index.en.html">
-<link rel="alternate" hreflang="he" href="https://yairmau.github.io/units/he/index.he.html">
+<link rel="alternate" hreflang="en" href="https://yairmau.github.io/units/en/quantifying/dimensions.en.html">
+<link rel="alternate" hreflang="he" href="https://yairmau.github.io/units/he/quantifying/dimensions.he.html">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.9.36">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="author" content="Yair Mau">
-<title>אֵיפָה וְאֵיפָה</title>
+<title>2  ממדים – אֵיפָה וְאֵיפָה</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -25,13 +24,14 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
-<script src="site_libs/quarto-nav/quarto-nav.js"></script><script src="site_libs/quarto-nav/headroom.min.js"></script><script src="site_libs/clipboard/clipboard.min.js"></script><script src="site_libs/quarto-search/autocomplete.umd.js"></script><script src="site_libs/quarto-search/fuse.min.js"></script><script src="site_libs/quarto-search/quarto-search.js"></script><meta name="quarto:offset" content="./">
-<link href="./mathematical_foundations/powers_rules.he.html" rel="next">
-<link href="./archive/logo.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script><script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="site_libs/quarto-html/popper.min.js"></script><script src="site_libs/quarto-html/tippy.umd.min.js"></script><script src="site_libs/quarto-html/anchor.min.js"></script><link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e3574cce5e3fde4ed97df547c7360872.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script><link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-54cc5f61f87fd151f88f457a17120cd6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script><script src="../site_libs/quarto-nav/headroom.min.js"></script><script src="../site_libs/clipboard/clipboard.min.js"></script><script src="../site_libs/quarto-search/autocomplete.umd.js"></script><script src="../site_libs/quarto-search/fuse.min.js"></script><script src="../site_libs/quarto-search/quarto-search.js"></script><meta name="quarto:offset" content="../">
+<link href="../quantifying/units.he.html" rel="next">
+<link href="../mathematical_foundations/powers_rules.he.html" rel="prev">
+<link href="../archive/logo.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script><script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="../site_libs/quarto-html/popper.min.js"></script><script src="../site_libs/quarto-html/tippy.umd.min.js"></script><script src="../site_libs/quarto-html/anchor.min.js"></script><link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e3574cce5e3fde4ed97df547c7360872.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script><link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-54cc5f61f87fd151f88f457a17120cd6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -71,8 +71,8 @@ document.addEventListener("DOMContentLoaded", () => {
   button.setAttribute("aria-label", label.textContent);
   button.querySelector("i")?.setAttribute("aria-hidden", "true");
 });
-</script><link rel="stylesheet" href="hebrew.css">
-<link rel="stylesheet" href="styles.css">
+</script><link rel="stylesheet" href="../hebrew.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 <body class="nav-sidebar floating quarto-light">
 
@@ -81,7 +81,10 @@ document.addEventListener("DOMContentLoaded", () => {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="הצג/הסתר את סרגל הניווט" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.he.html">דף הבית</a></li></ol></nav><a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="הצג/הסתר את סרגל הניווט" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="../quantifying/dimensions.he.html">לכמת את העולם</a></li>
+<li class="breadcrumb-item"><a href="../quantifying/dimensions.he.html"><span class="chapter-number">2</span>  <span class="chapter-title">ממדים</span></a></li>
+</ol></nav><a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="הצג/הסתר את סרגל הניווט" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="חפש" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -90,10 +93,10 @@ document.addEventListener("DOMContentLoaded", () => {
   </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="./index.html" class="sidebar-logo-link">
-      <img src="./archive/logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none"><img src="./archive/logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none"></a>
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../archive/logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none"><img src="../archive/logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none"></a>
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">אֵיפָה וְאֵיפָה</a> 
+      <a href="../">אֵיפָה וְאֵיפָה</a> 
         <div class="sidebar-tools-main">
     <a href="https://yairmau.com/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-house-fill"></i></a>
     <a href="https://github.com/yairmau/units/" title="קוד מקור" class="quarto-navigation-tool px-1" aria-label="קוד מקור"><i class="bi bi-github"></i></a>
@@ -106,13 +109,13 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
         </div>
     <div class="dropdown" id="languages-links-parent">
-<a class="btn btn-primary babelquarto-languages-button" id="languages-button" href="https://yairmau.github.io/units/en/index.en.html" hreflang="en"><i class="bi bi-globe2"></i> :English</a>
+<a class="btn btn-primary babelquarto-languages-button" id="languages-button" href="https://yairmau.github.io/units/en/quantifying/dimensions.en.html" hreflang="en"><i class="bi bi-globe2"></i> :English</a>
 </div>
 <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.he.html" class="sidebar-item-text sidebar-link active">
+  <a href="../index.he.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">דף הבית</span></a>
   </div>
 </li>
@@ -127,7 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./mathematical_foundations/powers_rules.he.html" class="sidebar-item-text sidebar-link">
+  <a href="../mathematical_foundations/powers_rules.he.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>  <span class="chapter-title">חוקי חזקות</span></span></a>
   </div>
 </li>
@@ -144,13 +147,13 @@ document.addEventListener("DOMContentLoaded", () => {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./quantifying/dimensions.he.html" class="sidebar-item-text sidebar-link">
+  <a href="../quantifying/dimensions.he.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>  <span class="chapter-title">ממדים</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./quantifying/units.he.html" class="sidebar-item-text sidebar-link">
+  <a href="../quantifying/units.he.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>  <span class="chapter-title">יחידות</span></span></a>
   </div>
 </li>
@@ -167,19 +170,19 @@ document.addEventListener("DOMContentLoaded", () => {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basic_concepts/area-and-volume.he.html" class="sidebar-item-text sidebar-link">
+  <a href="../basic_concepts/area-and-volume.he.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>  <span class="chapter-title">שטח ונפח</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basic_concepts/concentration.he.html" class="sidebar-item-text sidebar-link">
+  <a href="../basic_concepts/concentration.he.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>  <span class="chapter-title">ריכוז</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basic_concepts/density.he.html" class="sidebar-item-text sidebar-link">
+  <a href="../basic_concepts/density.he.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>  <span class="chapter-title">צפיפות</span></span></a>
   </div>
 </li>
@@ -193,38 +196,26 @@ document.addEventListener("DOMContentLoaded", () => {
 </div>
 </nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">תוכן עניינים</h2>
-   
-  <ul>
-<li>
-<a href="#%D7%93%D7%A3-%D7%94%D7%91%D7%99%D7%AA" id="toc-דף-הבית" class="nav-link active" data-scroll-target="#דף-הבית">דף הבית</a>
-  <ul class="collapse">
-<li><a href="#%D7%9E%D7%98%D7%A8%D7%94" id="toc-מטרה" class="nav-link" data-scroll-target="#מטרה">מטרה</a></li>
-  <li><a href="#%D7%A9%D7%9D" id="toc-שם" class="nav-link" data-scroll-target="#שם">שם</a></li>
-  </ul>
-</li>
-  </ul></nav>
-</div>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="../quantifying/dimensions.he.html">לכמת את העולם</a></li>
+<li class="breadcrumb-item"><a href="../quantifying/dimensions.he.html"><span class="chapter-number">2</span>  <span class="chapter-title">ממדים</span></a></li>
+</ol></nav><div class="quarto-title">
 <div class="quarto-title-block"><div>
-<h1 class="title">אֵיפָה וְאֵיפָה</h1>
-<button type="button" class="btn code-tools-button" id="quarto-code-tools-source" data-quarto-source-url="https://github.com/yairmau/units/blob/main/index.he.qmd"><i class="bi"></i> קוד</button>
+<h1 class="title">
+<span class="chapter-number">2</span>  <span class="chapter-title">ממדים</span>
+</h1>
+<button type="button" class="btn code-tools-button" id="quarto-code-tools-source" data-quarto-source-url="https://github.com/yairmau/units/blob/main/quantifying/dimensions.he.qmd"><i class="bi"></i> קוד</button>
 </div></div>
-<p class="subtitle lead">ממדים, יחידות וסדרי גודל</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">כותב</div>
-    <div class="quarto-title-meta-contents">
-             <p>Yair Mau </p>
-          </div>
-  </div>
     
   
     
@@ -232,33 +223,61 @@ document.addEventListener("DOMContentLoaded", () => {
   
 
 
-</header><section id="דף-הבית" class="level1 unnumbered"><h1 class="unnumbered">דף הבית</h1>
-<section id="מטרה" class="level2"><h2 class="anchored" data-anchor-id="מטרה">מטרה</h2>
-<p>המטרה שלי היא לעזור לסטודנטים בשנה הראשונה באוניברסיטה לרכוש כמה מיומנויות בסיסיות, שהן יסוד ללימודי תואר ראשון במדעים. הנושאים העיקריים כאן הם:</p>
-<ul>
-<li>המרת יחידות</li>
-<li>חשיבה בסיסית על ממדים</li>
-<li>סדרי גודל</li>
-<li>כתיב מדעי</li>
-<li>ספרות משמעותיות</li>
-</ul>
-<p>המיומנויות האלה עוזרות לנו לבדוק חישובים, להשוות כמויות ולהעריך אם תשובה הגיונית מבחינה פיזיקלית. קשה להפריז בתועלת שלהן.</p>
-<p>זהו פרויקט מתמשך בפיתוחו של יאיר מאו. התכנים כאן נכתבו בהשראת הניסיון שלי בהוראת קורסי מבוא בפיזיקה באוניברסיטה העברית בירושלים, בקמפוס רחובות.</p>
-<p>אם יש לכם הערות, תיקונים או הצעות, אשמח שתיצרו איתי קשר דרך <a href="https://yairmau.com/" target="_blank">האתר שלי</a>.</p>
-</section><section id="שם" class="level2"><h2 class="anchored" data-anchor-id="שם">שם</h2>
-<p>השם האנגלי והשם העברי של האתר הם שניהם משחקי מילים בהשראת כתבי הקודש והספרות.</p>
-<ul>
-<li>
-<strong>Measure for Measure</strong>. שייקספיר נתן את השם הזה למחזה שבו דמויות רחוקות משלמות מתמודדות עם חוקים נוקשים, צדק ורחמים. השם מהדהד את הדרשה על ההר: אמת המידה שבה אנו שופטים אחרים תשמש גם לשפוט אותנו (מתי ז׳, ב׳). המחזה מעלה גם שאלות של איזון ומתינות, ומציע לנו דרך נוספת לחשוב על המילה <em>measure</em> — מידה.</li>
-<li>
-<strong>אֵיפָה וְאֵיפָה</strong>. ספר דברים מזהיר אותנו שלא להחזיק שתי מידות שונות, אחת גדולה ואחת קטנה (דברים כ״ה, י״ד). איפה היא מידת נפח, ששימשה בדרך כלל למדידת תבואה. קנייה במידה הגדולה ומכירה במידה הקטנה היו מאפשרות לרמות. לכן הביטוי ״איפה ואיפה״ משמש לציון אפליה, חוסר הגינות או מוסר כפול.</li>
-</ul>
-<p>אני בהחלט מודע לכך ששני הביטויים מעוררים אסוציאציות לא כל כך נעימות. בחרתי בשמות האלה כי אותה מילה חוזרת בהם פעמיים, והמילה החוזרת קשורה למדידה. ובכל זאת, הרשו לי לנסות לרומם מעט את רוחנו מעבר למחשבות על גמול ועל משוא פנים. השמות האלה גם מזכירים לנו מדוע חשוב שיהיו לנו אמות מידה משותפות.</p>
-<p>השיטה המטרית היא תוצר של הנאורות, והיא התגבשה בתקופת המהפכה הצרפתית. קונְדוֹרְסֶה, לָבוּאַזיֶה ולַפְּלָס (ורבים אחרים) סייעו לפתח שיטת מדידה אוניברסלית. השאיפה הייתה הרבה מעבר להקלה על החישובים: להחליף את המגוון הלא־אחיד של המידות והמשקולות המקומיות שעבר בירושה מן הסדר הפיאודלי, לגזור אמות מידה מן הטבע ולא ממלכים, ולקדם שפה משותפת, עולמית וחסרת גבולות למסחר, לדיפלומטיה ולמדע. אמת מידה המבוססת על עולם הטבע יכולה להיות שייכת לכולם, במקום להיות תלויה בסמכותו של שליט מסוים.</p>
-<p>שמות האתר מזכירים לנו מה מונח על הכף כשהמידות תלויות בזהות הקונה, בזהות המוכר או בזהות מי שמחזיק בכוח. ירשנו דבר יוצא דופן מהמדענים האלה וממי שהמשיכו את עבודתם במאתיים השנים האחרונות. בואו נלמד להשתמש בו.</p>
-
-
-</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</header><p>ממדים הם גדלים פיזיקליים המתארים את אופי המדידה, כגון אורך, זמן או מסה. יחידות, לעומת זאת, הן כמויות מוסכמות המשמשות לביטוי ערכו של גודל בעל ממד מסוים. למשל, מטר, אינץ׳ ופרסק הם יחידות של ממד האורך.</p>
+<p>שלושת הממדים הבסיסיים במכניקה הם <strong>אורך</strong>, <strong>זמן</strong> ו<strong>מסה</strong>. ממדים חשובים נוספים הם <strong>טמפרטורה</strong>, <strong>זרם חשמלי</strong> ו<strong>כמות חומר</strong>. אפשר לתאר כל גודל פיזיקלי באמצעות הממדים הבסיסיים האלה.</p>
+<p>ממדים נפוצים במדע ובהנדסה:</p>
+<table class="caption-top table">
+<thead><tr class="header">
+<th>ממד</th>
+<th>סמל</th>
+<th>תיאור</th>
+<th>יחידת SI</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>אורך</td>
+<td>L</td>
+<td>מרחק או גודל</td>
+<td>מטר (m)</td>
+</tr>
+<tr class="even">
+<td>זמן</td>
+<td>T</td>
+<td>משך או פרק זמן</td>
+<td>שנייה (s)</td>
+</tr>
+<tr class="odd">
+<td>מסה</td>
+<td>M</td>
+<td>כמות החומר</td>
+<td>קילוגרם (kg)</td>
+</tr>
+<tr class="even">
+<td>טמפרטורה</td>
+<td>Θ</td>
+<td>מידת החום</td>
+<td>קלווין (K)</td>
+</tr>
+<tr class="odd">
+<td>זרם חשמלי</td>
+<td>I</td>
+<td>זרימה של מטען חשמלי</td>
+<td>אמפר (A)</td>
+</tr>
+<tr class="even">
+<td>כמות חומר</td>
+<td>N</td>
+<td>כמות של ישויות</td>
+<td>מול (mol)</td>
+</tr>
+<tr class="odd">
+<td>עוצמת אור</td>
+<td>J</td>
+<td>עוצמת ההארה בכיוון נתון</td>
+<td>קנדלה (cd)</td>
+</tr>
+</tbody>
+</table></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
@@ -709,10 +728,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
   </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+      <a href="../mathematical_foundations/powers_rules.he.html" class="pagination-link" aria-label="חוקי חזקות">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>  <span class="chapter-title">חוקי חזקות</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./mathematical_foundations/powers_rules.he.html" class="pagination-link" aria-label="חוקי חזקות">
-        <span class="nav-page-text"><span class="chapter-number">1</span>  <span class="chapter-title">חוקי חזקות</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../quantifying/units.he.html" class="pagination-link" aria-label="יחידות">
+        <span class="nav-page-text"><span class="chapter-number">3</span>  <span class="chapter-title">יחידות</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

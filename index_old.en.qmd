@@ -1,0 +1,28 @@
+# Home {.unnumbered}
+
+This is an ongoing project developed by Yair Mau. The content here has been inspired by my experience teaching basic Physics courses at the Hebrew University of Jerusalem, campus Rehovot.
+
+If you have any comments, corrections, or suggestions, please send me [an email](https://yairmau.com/){target="_blank"}.
+
+## goal
+
+My goal is to provide 1st year university students with some basic skills that are fundamental to any scientific undergraduate degree. The main topics here are:
+
+* unit conversion
+* basic dimensional thinking
+* order of magnitudes
+* scientific notation
+* significant figures
+
+I cannot overstate the importance of these topics.
+
+## name
+
+The English and Hebrew names for this website are both word plays inpired in the scriptures and literature.
+
+* **Measure for Measure**. This is an allusion to the Code of Hammurabi, usually called Eye for an eye. In this sense, the word measure features in the Sermon on the Mount, meaning "act". Shakespeare wrote a play called "Measure for Measure", where less-than-perfect characters with to apply the a merciless law too strictly, but also find in the end some balance and moderation, which are yet another meaning of measure.
+* **אֵיפָה וְאֵיפָה**, Eifa veEifa. The book of Deuteronomy warns us not to have two different sets of measurements (Eifa is a measurement of volume, usually of grains), one big for buying and one small for selling. Eifa veEifa therefore is an expression used to indicate discrimination, inequity, or double standards.
+
+I do realize that both expressions carry really bad conotations, and it would be probably best not to have called this website after them. I chose these names because they repeat twice the same word, and the word being repeated means measurement. However, let me try and lift our spirits beyond the thoughts of retributive justice and preferential treatment.
+
+The metric system is the product of the Enlightenment. Condorcet, Lavoisier and Laplace (among many others), proposed a universal system of measurements exactly to erradicate the feudal previledge of noblemen to define weights and measures, to derive standards from Nature and not kings, and to promote a shared, global, and borderless language for trade, diplomacy and science. The names used to call this website alert us of the perils of not knowing what these giants prepared for us in the past two centuries. Let us learn.
