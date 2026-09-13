@@ -4,6 +4,10 @@ dir: rtl
 
 # חוקי חזקות
 
+::: {style="text-align: center; font-size: 4.5rem; line-height: 1.2; margin: 2rem 0;"}
+$10^💪$
+:::
+
 ## כפל חזקות
 
 אין זה מפתיע ש־

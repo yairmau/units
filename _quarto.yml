@@ -44,13 +44,19 @@ book:
       part-he: לכמת את העולם
       chapters:
         - quantifying/dimensions.en.qmd
-        - quantifying/units.en.qmd
+        - quantifying/SI.en.qmd
+        - quantifying/prefixes.en.qmd
     - part: basic concepts
       part-he: מושגי יסוד
       chapters:
         - basic_concepts/area-and-volume.en.qmd
         - basic_concepts/concentration.en.qmd
         - basic_concepts/density.en.qmd
+    - part: conversion methods
+      part-he: שיטות המרה
+      chapters:
+        - conversion_methods/prefix_operations.en.qmd
+        - conversion_methods/chain_link_conversion.en.qmd
 
   sidebar:
     collapse-level: 2

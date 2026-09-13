@@ -1,12 +1,17 @@
-# units
+# prefixes
 
-## SI
+Prefixes are short letter combinations placed before a unit to indicate multiples or fractions of that unit.
+They make it easier to express very large or very small quantities.
+The most common prefixes are shown in bold in the table below.
+For a fuller list extending orders of magnitude from $10^{-24}$ to $10^{24}$, click the button below.
 
-The SI (Système International d'Unités) is the modern form of the metric system and the most widely used system of measurement for science and engineering. It defines seven base units (meter, kilogram, second, ampere, kelvin, mole, and candela) from which all other units are derived. The SI provides a standardized way to express and compare physical quantities across disciplines and countries.
+::: {#offcanvasPrefixes .offcanvas .offcanvas-start}
+::: {.offcanvas-header}
+### Prefixes {.unnumbered .unlisted}
+<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+:::
+::: {.offcanvas-body}
 
-## prefixes
-
-Prefixes are short letter combinations placed before a unit to indicate multiples or fractions of that unit. They make it easier to express very large or very small quantities. The most common prefixes are shown in bold in the table below.
 
 | Prefix  | Symbol | Power of 10    | Common Example                                  |
 |---------|--------|----------------|-------------------------------------------------|
@@ -31,3 +36,25 @@ Prefixes are short letter combinations placed before a unit to indicate multiple
 | atto    | a      | $10^{-18}$     | as, attosecond (quantum, time)                  |
 | zepto   | z      | $10^{-21}$     | zm, zeptometer (physics, length)                |
 | yocto   | y      | $10^{-24}$     | yg, yoctogram (chemistry, mass)                 |
+:::
+:::
+
+::: {.btn .btn-warning data-bs-toggle="offcanvas" data-bs-target="#offcanvasPrefixes" style="height: 2.5rem; line-height: 2.3rem; padding-top: 0; padding-bottom: 0;"}
+See here.
+:::
+
+The most commonly used prefixes that we should be comfortable with are:
+
+
+| Prefix  | Symbol | Power of 10    | Common Example                                  |
+|---------|--------|----------------|-------------------------------------------------|
+| tera    | T      | $10^{12}$      | TB, terabyte (information storage)         |
+| giga    | G      | $10^{9}$       | GHz, gigahertz (electronics, frequency)         |
+| mega    | M      | $10^{6}$       | MW, megawatt (energy, power)                    |
+| kilo    | k      | $10^{3}$       | km, kilometer (geography, length)               |
+|             |        | $10^{0}$       |                            |
+| deci    | d      | $10^{-1}$      | dL, deciliter (chemistry, volume)               |
+| centi   | c      | $10^{-2}$      | cm, centimeter (biology, length)                |
+| milli   | m      | $10^{-3}$      | ms, millisecond (neuroscience, time)            |
+| micro   | µ      | $10^{-6}$      | µg, microgram (chemistry, mass)             |
+| nano    | n      | $10^{-9}$      | nm, nanometer (materials, length)               |

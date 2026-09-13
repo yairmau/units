@@ -1,17 +1,50 @@
-# dimensions
+# dimensions and units
 
-Dimensions are physical quantities that describe the nature of a measurement, such as length, time, or mass. Units, on the other hand, are standardized quantities used to express the value of a dimension. For example, "meter", "inch" and "parsec" are units for the dimension of length.
+## definition
 
-The three fundamental dimensions in mechanics are **length**, **time**, and **mass**. In addition to these, other important dimensions include **temperature**, **electric current**, and **amount of substance**. Each physical quantity can be described in terms of these basic dimensions.
+**Dimensions** answer the question: what is being measured?
+For example, we can measure length, mass or time.
 
-Commonly used dimensions in science and engineering:
+**Units** answer: how to we measure? Length, for example, can be measured in centimeters, miles, or cubits (from your elbow to the tip of your middle finger).
+
+The three fundamental dimensions in Classical Mechanics are **length**, **time**, and **mass**.
 
 | Dimension         | Symbol | Description                  | SI Unit          |
 |-------------------|--------|------------------------------|------------------|
 | Length            | L      | distance or size             | meter (m)        |
 | Time              | T      | duration or interval         | second (s)       |
 | Mass              | M      | amount of matter             | kilogram (kg)    |
+
+
+In addition to these, other important dimensions include **temperature**, **electric current**, and **amount of substance**.
+
+::: {#offcanvasOtherDimensions .offcanvas .offcanvas-start}
+::: {.offcanvas-header}
+### Other dimensions {.unnumbered .unlisted}
+<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+:::
+::: {.offcanvas-body}
+| Dimension         | Symbol | Description                  | SI Unit          |
+|-------------------|--------|------------------------------|------------------|
 | Temperature       | Θ      | degree of hotness            | kelvin (K)       |
 | Electric current  | I      | flow of electric charge      | ampere (A)       |
 | Amount of substance | N    | quantity of entities         | mole (mol)       |
 | Luminous intensity | J     | brightness                   | candela (cd)     |
+:::
+:::
+
+::: {.btn .btn-warning data-bs-toggle="offcanvas" data-bs-target="#offcanvasOtherDimensions" style="height: 2.5rem; line-height: 2.3rem; padding-top: 0; padding-bottom: 0;"}
+See here.
+:::
+
+## derived quantities
+
+We can combine the three fundamental dimensions most used in classical mechanics to derive many familiar concepts.
+
+| Quantity         | Derived dimensions | SI Unit          |
+|-------------------|--------|------------------------------|
+| Velocity            | L T$^{-1}$     | meter per second (m/s)        |
+| Area              | L$^2$      | meter squared (m$^2$)       |
+| Force              | MLT$^{-2}$      | newton (N)    |
+| Frequency          | T$^{-1}$  | hertz (Hz)  |
+| And many many more... |  |  |
