@@ -29,9 +29,9 @@ author-he: "Yair Mau"
 book:
   title: "Measure for Measure"
   subtitle: "Dimensions, units, and orders of magnitude"
-  site-url: https://yairmau.github.io/units/
+  site-url: https://yairmau.github.io/measure/
   author: "Yair Mau"
-  repo-url: https://github.com/yairmau/units/
+  repo-url: https://github.com/yairmau/measure/
   favicon: archive/logo.png
 
   chapters:

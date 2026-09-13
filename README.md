@@ -1,7 +1,15 @@
-# Units — English and Hebrew
+# Measure — English and Hebrew
 
 The book uses [babelquarto](https://docs.ropensci.org/babelquarto/) to build both
 languages with an English / עברית menu linking corresponding chapters.
+
+## TL;DR
+
+For previewing run 
+python3 scripts/preview.py
+
+For rendering html run
+Rscript scripts/render.R
 
 ## Setup
 
@@ -102,7 +110,7 @@ Rscript scripts/render.R
 ```
 
 This builds the website into `docs/`, using `book.site-url` from `_quarto.yml`
-for language links. The initial URL is `https://yairmau.github.io/units/`;
+for language links. The initial URL is `https://yairmau.github.io/measure/`;
 change it if the book is hosted elsewhere. Publish the entire `docs/` directory,
 including `en/` and `he/`. The root page redirects to `en/`. This script does not publish anything.
 

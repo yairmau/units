@@ -1,1 +1,1 @@
-Sitemap: https://yairmau.github.io/units/sitemap.xml
+Sitemap: https://yairmau.github.io/measure/sitemap.xml
